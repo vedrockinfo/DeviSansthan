@@ -1,0 +1,64 @@
+main {
+  @media screen and (min-width: 1200.1px) {
+    padding-top: 256.27px;
+  }
+
+  @media screen and (min-width: 992.9px) and (max-width: 1200px) {
+    padding-top: 250.66px;
+  }
+  @media screen and (max-width: 992px) and (min-width: 576.1px) {
+    padding-top: 100.53px;
+  }
+  @include DeviceMaximum576 {
+    padding-top: 87.95px;
+  }
+}
+.section-one {
+  padding: 7rem 0;
+  @include DeviceMaximum768 {
+    padding: 4rem 0;
+  }
+}
+.section-two {
+  padding-bottom: 7rem;
+  @include DeviceMaximum768 {
+    padding-bottom: 4rem;
+  }
+}
+.alfa {
+  padding-top: 7rem;
+  @include DeviceMaximum768 {
+    padding-top: 4rem;
+  }
+}
+.link-one a {
+  background-image: $gradientOne;
+  color: $colorWhite;
+  border: 1px solid $colorPrimary;
+  border-radius: 30px;
+  transition: $transition04s;
+  width: 200px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  @include DeviceMaximum768 {
+    width: 160px;
+    height: 40px;
+    margin: auto;
+  }
+  &:hover {
+    background: transparent;
+    border: 1px solid $colorPrimary;
+    color: $colorPrimary;
+  }
+}
+.para-one {
+  margin: 2rem 0;
+  p {
+    letter-spacing: 0.3px;
+    line-height: 1.7;
+  }
+}
+.space-one {
+  margin-bottom: 5rem;
+}

@@ -1,0 +1,202 @@
+header {
+  position: absolute;
+  width: 100%;
+  @include DeviceMaximum992 {
+    ul.navbar-nav {
+      width: 85%;
+      margin: auto;
+      height: 75vh;
+      overflow: scroll;
+    }
+  }
+  a.navbar-brand {
+    @include DeviceMinimum992 {
+      display: none;
+    }
+  }
+  transition: $transition04s;
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .topheader {
+    padding: 20px 0;
+    @include DeviceMaximum992 {
+      display: none;
+    }
+    .col-md-6:last-child {
+      text-align: right;
+    }
+    img[alt="Logo"] {
+      max-width: 350px;
+      height: auto;
+    }
+    img[alt="Global Dream"] {
+      max-width: 150px;
+      height: auto;
+    }
+  }
+
+  .navbar {
+    .navbar-toggler {
+      border: none !important;
+    }
+  }
+  nav {
+    @media screen and (min-width: 992.5px) {
+      background-image: $gradientOne;
+    }
+    @include DeviceMaximum992 {
+      background-color: transparent;
+    }
+    .nav-item {
+      font-size: 21px;
+      padding: 10px 5px;
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+      @media screen and (max-width: 1399.9px) and (min-width: 1200px) {
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 1199.9px) and (min-width: 768px) {
+      a.btn.subscribe-btn {
+        width: auto;
+        font-size: 16px;
+      }
+      .navbar-brand img {
+        max-width: 200px !important;
+      }
+    }
+    a.nav-link,
+    .active {
+      @include DeviceMinimum992 {
+        color: $colorWhite !important;
+      }
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        font-size: 14.5px !important;
+      }
+      transition: $transition04s;
+      text-transform: uppercase;
+      &:hover {
+        color: $colorWhite !important;
+      }
+    }
+    .navbar-brand {
+      img {
+        max-width: 250px;
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+          max-width: 193.5px;
+        }
+        @include DeviceMaximum576 {
+          max-width: 170px;
+        }
+      }
+    }
+    .collapse {
+      justify-content: flex-end;
+      @include DeviceMaximum992 {
+        background-color: $colorWhite;
+        z-index: 9;
+      }
+    }
+    .navbar-nav {
+      @include DeviceMinimum1400 {
+        gap: 15px;
+      }
+      @include DeviceMinimum992 {
+        align-items: center;
+      }
+    }
+    .dropdown {
+      & > a {
+        &::after {
+          content: "\f078";
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          border-top: none;
+          font-size: 10px;
+          vertical-align: 3px;
+        }
+      }
+      .dropdown-menu {
+        @media screen and (max-width: 991.5px) {
+          display: block;
+          position: static;
+          padding: 0 30px;
+        }
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-top: 3px solid $colorPrimary;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+        border-radius: 0 0 15px 15px;
+        li:not(:last-child) {
+          padding: 3px 0;
+          margin: 3px 5px;
+          border-bottom: 1px solid rgba($colorPrimary, $alpha: 0.2);
+        }
+        li a {
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 992) {
+        .dropdown {
+          .dropdown-menu {
+            display: none;
+            transition: $transition04s;
+          }
+          &:hover {
+            .dropdown-menu {
+              display: block;
+            }
+          }
+        }
+      }
+      @include DeviceMinimum992 {
+        .dropdown-menu {
+          display: block;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-10%);
+          transition: $transition04s;
+        }
+        &:hover {
+          .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  z-index: 9;
+  animation: slidetop;
+  animation-duration: 0.6s;
+  transition: all 0.5s;
+  animation-delay: 5s;
+
+  .navbar {
+    padding: 10px 0;
+    @include DeviceMaximum992 {
+      background-color: #fff;
+    }
+  }
+}

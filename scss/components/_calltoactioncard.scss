@@ -1,0 +1,53 @@
+.call-to-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  margin: auto;
+  @include DeviceMaximum768 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.call-cards {
+  margin-bottom: 0;
+
+  .card.call-to-action-card {
+    border-radius: 0 0 10px 10px;
+  }
+  .link-one a {
+    margin: 2rem auto 1rem auto;
+  }
+}
+.call-to-action-card {
+  .card.testimonial-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .avatar {
+    margin-top: -80px;
+    img {
+      width: 200px;
+      outline: 7px solid #fff;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      @include DeviceMaximum768 {
+        width: 130px;
+      }
+    }
+  }
+
+  .card-up.aqua-gradient {
+    background-image: $gradientOne;
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+}
+@include DeviceMinimum992 {
+  section.section-two .row.alfa {
+    width: 940px;
+    margin: auto;
+  }
+}

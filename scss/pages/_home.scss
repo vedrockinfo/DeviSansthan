@@ -1,0 +1,68 @@
+.section-one {
+  .devi-images-section {
+    .devi-img {
+      max-width: calc(100% - 50px);
+      @include DeviceMaximum768 {
+        max-width: 100%;
+      }
+      img.img-fluid {
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .row.alfa {
+    .devi-images-section {
+      .devi-img img.img-fluid {
+        text-align: right;
+      }
+    }
+  }
+  .row {
+    .devi-images-section {
+      .devi-img {
+        position: relative;
+        &:hover::after {
+          left: 20px;
+          top: 20px;
+        }
+        &:hover img {
+          transform: translate(-10px, -10px);
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+            rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          @include DeviceMaximum768 {
+            transform: none !important;
+          }
+        }
+        &::after {
+          background: $colorYellow;
+          content: "";
+          width: 100%;
+          height: 100%;
+          top: 0;
+          z-index: -1;
+          left: 0;
+          position: absolute;
+          border-radius: 10px;
+          transition: all 0.5s;
+          @include DeviceMaximum768 {
+            content: none !important;
+          }
+        }
+      }
+    }
+    &:first-child {
+    }
+    &:nth-child(2) {
+    }
+  }
+}
+
+@include DeviceMaximum768 {
+  section.section-one .row {
+    gap: 30px;
+    &:first-child {
+      flex-direction: column-reverse;
+    }
+  }
+}

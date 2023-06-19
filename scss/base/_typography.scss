@@ -1,0 +1,31 @@
+html {
+  font-size: 62.5%;
+}
+a,
+p,
+li,
+span {
+  font-size: 1.8rem !important;
+  @include DeviceMaximum768 {
+    font-size: 1.4rem !important;
+  }
+}
+
+.secondary-heading {
+  font-size: 5rem;
+  font-weight: bold;
+  color: $colorPrimary;
+  @include DeviceMaximum768 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+.tertiary-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $colorPrimary;
+  @include DeviceMaximum768 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}

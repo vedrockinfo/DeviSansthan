@@ -1,0 +1,21 @@
+.our-partners {
+  padding: 7rem 0;
+  .owl-carousel .owl-dots {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+  }
+
+  .owl-carousel .owl-dot {
+    background: $colorSecondary;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+
+  .owl-carousel .owl-dot.active {
+    background: $colorPrimary;
+  }
+}

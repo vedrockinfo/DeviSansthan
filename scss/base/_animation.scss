@@ -1,0 +1,19 @@
+@keyframes slidetop {
+  from {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-240%);
+  }
+}
