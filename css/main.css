@@ -374,6 +374,21 @@ span {
           transform: translate(-50%, -50%);
   width: 100%;
 }
+.hero-section .hero-link a.btn.hero-btn {
+  background: #ffbf46;
+  border-radius: 50px;
+  margin-top: 20px;
+  border: 1px solid #ffbf46;
+  padding: 10px 30px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.hero-section .hero-link a.btn.hero-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
 .hero-section .hero-container .contents-hero {
   text-align: center;
   color: #fff;
@@ -381,6 +396,18 @@ span {
 @media (max-width: 768px) {
   .hero-section .hero-container .contents-hero {
     padding: 0 50px;
+  }
+}
+.hero-section h6 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 200;
+}
+@media (max-width: 768px) {
+  .hero-section h6 {
+    font-size: 14px;
+    letter-spacing: 3px;
   }
 }
 .hero-section .hero-container .contents-hero h1 {
@@ -391,7 +418,7 @@ span {
 }
 @media (max-width: 768px) {
   .hero-section .hero-container .contents-hero h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 .hero-section .hero-container .contents-hero h2 {
@@ -1016,7 +1043,7 @@ header nav .dropdown .dropdown-menu li a {
     visibility: visible;
     -webkit-transform: none;
             transform: none;
-    margin-top: 20px;
+    margin-top: 6px;
   }
 }
 
