@@ -83,7 +83,7 @@
         content: "";
         position: absolute;
         border-radius: 65% 35% 70% 30%/64% 31% 69% 36%;
-        background-color: #ffac00;
+        background-color: $colorYellow;
       }
       img {
         border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
@@ -187,7 +187,7 @@
     transition: all 0.5s;
     border-radius: 50%;
     &:hover {
-      background: #ff2c9c;
+      background: $colorPink;
       img {
         filter: hue-rotate(130deg) invert(1) brightness(2);
       }

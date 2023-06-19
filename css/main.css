@@ -230,8 +230,13 @@ span {
   width: 50px !important;
   border-radius: 50%;
 }
-.experience-section p.card-text {
+.experience-section .card-text {
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .experience-section .card-text {
+    min-height: 88px;
+  }
 }
 .experience-section .owl-nav {
   display: -webkit-box;
@@ -264,6 +269,8 @@ span {
   height: 100%;
   -webkit-transform: translate(-50%, -50%) rotate(180deg);
           transform: translate(-50%, -50%) rotate(180deg);
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 .experience-section button.owl-next span::before {
   content: "";
@@ -280,10 +287,12 @@ span {
   height: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 .experience-section button.owl-prev,
 .experience-section button.owl-next {
-  background: #03613f !important;
+  background: #ffbf46 !important;
   display: grid;
   height: 50px;
   width: 50px;
@@ -465,14 +474,14 @@ span {
           align-items: center;
 }
 .our-partners .owl-carousel .owl-dot {
-  background: #51b854;
+  background: rgba(255, 191, 70, 0.5);
   width: 10px;
   height: 10px;
   margin: 0 5px;
   border-radius: 50%;
 }
 .our-partners .owl-carousel .owl-dot.active {
-  background: #03613f;
+  background: #ffbf46;
 }
 
 .engagements {
@@ -511,13 +520,15 @@ span {
   display: block;
   width: 50px;
   height: 50px;
-  background: #03613f;
+  background: #ffbf46;
   opacity: 1;
 }
 .engagements .carousel-control-prev-icon:after,
 .engagements .carousel-control-next-icon:after {
   width: 21px;
   height: 28px;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 
 footer {
@@ -1117,7 +1128,7 @@ header nav .dropdown .dropdown-menu li a {
   content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: #ff2c9c;
+  background-color: #ff4340;
 }
 .globalAdvisorySection .committee-members .global-testimonials-image::after {
   left: 0;
@@ -1128,7 +1139,7 @@ header nav .dropdown .dropdown-menu li a {
   content: "";
   position: absolute;
   border-radius: 65% 35% 70% 30%/64% 31% 69% 36%;
-  background-color: #ffac00;
+  background-color: #ffbf46;
 }
 .globalAdvisorySection .committee-members .global-testimonials-image img {
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
@@ -1181,7 +1192,7 @@ header nav .dropdown .dropdown-menu li a {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  outline: 2px solid #ff2c9c;
+  outline: 2px solid #ff4340;
   border: 2px solid #ffffff;
 }
 @media (max-width: 768px) {
@@ -1205,7 +1216,7 @@ header nav .dropdown .dropdown-menu li a {
 .globalAdvisorySection .committee-members .global-testimonials-content i.icon.fa-solid.fa-quote-left {
   line-height: 1;
   margin-bottom: 20px;
-  color: #ff2c9c;
+  color: #ff4340;
   display: block;
   font-size: 60px;
   text-align: center;
@@ -1249,7 +1260,7 @@ header nav .dropdown .dropdown-menu li a {
 }
 .globalAdvisorySection .nav-btn.next-slide:hover,
 .globalAdvisorySection .nav-btn.prev-slide:hover {
-  background: #ff2c9c;
+  background: #ff4340;
 }
 .globalAdvisorySection .nav-btn.next-slide:hover img,
 .globalAdvisorySection .nav-btn.prev-slide:hover img {

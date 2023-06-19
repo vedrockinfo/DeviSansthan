@@ -8,7 +8,7 @@
   }
 
   .owl-carousel .owl-dot {
-    background: $colorSecondary;
+    background: rgba($colorYellow, $alpha: 0.5);
     width: 10px;
     height: 10px;
     margin: 0 5px;
@@ -16,6 +16,6 @@
   }
 
   .owl-carousel .owl-dot.active {
-    background: $colorPrimary;
+    background: $colorYellow;
   }
 }
