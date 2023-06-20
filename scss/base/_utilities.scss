@@ -1,13 +1,16 @@
 main {
   @media screen and (min-width: 1200.1px) {
-    padding-top: 256.27px;
+    padding-top: 276.3px;
   }
 
   @media screen and (min-width: 992.9px) and (max-width: 1200px) {
-    padding-top: 250.66px;
+    padding-top: 271.4px;
   }
   @media screen and (max-width: 992px) and (min-width: 576.1px) {
     padding-top: 100.53px;
+  }
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+    padding-top: 185.3px;
   }
   @include DeviceMaximum576 {
     padding-top: 87.95px;
@@ -52,6 +55,7 @@ main {
     color: $colorPrimary;
   }
 }
+
 .para-one {
   margin: 2rem 0;
   p {

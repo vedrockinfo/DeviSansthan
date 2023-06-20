@@ -121,17 +121,22 @@ span {
 
 @media screen and (min-width: 1200.1px) {
   main {
-    padding-top: 256.27px;
+    padding-top: 276.3px;
   }
 }
 @media screen and (min-width: 992.9px) and (max-width: 1200px) {
   main {
-    padding-top: 250.66px;
+    padding-top: 271.4px;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 576.1px) {
   main {
     padding-top: 100.53px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  main {
+    padding-top: 185.3px;
   }
 }
 @media (max-width: 576px) {
@@ -573,7 +578,7 @@ footer > .container {
 }
 @media (max-width: 768px) {
   footer {
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 85px 0;
   }
 }
 @media (max-width: 768px) {
@@ -850,6 +855,128 @@ header {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
+header .middleheader {
+  background: #333333;
+  padding: 20px 0;
+}
+@media screen and (max-width: 1200px) {
+  header .middleheader .container {
+    max-width: 90%;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  header .middleheader {
+    display: none;
+  }
+}
+header .middleheader .how-contact a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+header .middleheader .how-contact ul,
+header .middleheader .help-support ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 0;
+}
+header .middleheader .how-contact ul li,
+header .middleheader .help-support ul li {
+  color: #ffffff;
+  font-size: 14px !important;
+  list-style: none;
+}
+header .middleheader .how-contact ul li a,
+header .middleheader .how-contact ul li span,
+header .middleheader .help-support ul li a,
+header .middleheader .help-support ul li span {
+  color: #ffffff;
+  font-size: 14px !important;
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  header .middleheader .how-contact ul li a,
+  header .middleheader .how-contact ul li span,
+  header .middleheader .help-support ul li a,
+  header .middleheader .help-support ul li span {
+    font-size: 13px !important;
+  }
+}
+header .middleheader .help-support ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header .middleheader .help-support ul li.support a {
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 4px 15px;
+  border-radius: 30px;
+}
+header .middleheader .help-support ul li.login {
+  display: none;
+}
+header .middleheader .help-support ul li.login a {
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 4px 15px;
+  border-radius: 30px;
+}
+header .middleheader .help-support ul li.signup a {
+  text-transform: uppercase;
+  color: #333333;
+  background: #ffffff;
+  border: 1px solid;
+  padding: 4px 15px;
+  border-radius: 30px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+header .middleheader .help-support ul li.signup a:hover {
+  background: transparent;
+  color: #ffffff;
+}
+header .middleheaderformobile {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 7;
+}
+@media (min-width: 768px) {
+  header .middleheaderformobile {
+    display: none;
+  }
+}
+header .middleheaderformobile ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  margin: 0;
+}
+header .middleheaderformobile ul li {
+  text-align: center;
+  padding: 10px;
+}
+header .middleheaderformobile ul li:nth-child(1) {
+  grid-column-end: span 2;
+  background: #ff4340;
+  text-transform: uppercase;
+}
+header .middleheaderformobile ul li:nth-child(2) {
+  background: #03613f;
+}
+header .middleheaderformobile ul li:nth-child(3) {
+  background: #51b854;
+}
+header .middleheaderformobile ul li a,
+header .middleheaderformobile ul li span {
+  color: #ffffff;
+}
 @media (max-width: 992px) {
   header ul.navbar-nav {
     width: 85%;
@@ -879,11 +1006,11 @@ header .topheader .col-md-6:last-child {
   text-align: right;
 }
 header .topheader img[alt=Logo] {
-  max-width: 350px;
+  max-width: 250px;
   height: auto;
 }
 header .topheader img[alt="Global Dream"] {
-  max-width: 150px;
+  max-width: 50%;
   height: auto;
 }
 header .navbar .navbar-toggler {
@@ -1580,4 +1707,283 @@ img.flag {
 }
 .latest-news .posted span {
   font-size: 12px !important;
+}
+
+.registration-form {
+  padding: 10rem 0;
+}
+@media (min-width: 768px) {
+  .registration-form {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(58.44%, rgba(255, 255, 255, 0.9)), color-stop(41.66%, rgba(255, 191, 70, 0.9))), url("../img/hero-02.jpg");
+    background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.9) 58.44%, rgba(255, 191, 70, 0.9) 41.66%), url("../img/hero-02.jpg");
+  }
+}
+@media (max-width: 768px) {
+  .registration-form {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(58.44%, rgba(255, 191, 70, 0.7)), color-stop(41.66%, rgba(255, 191, 70, 0.7))), url("../img/hero-02.jpg");
+    background-image: linear-gradient(-90deg, rgba(255, 191, 70, 0.7) 58.44%, rgba(255, 191, 70, 0.7) 41.66%), url("../img/hero-02.jpg");
+  }
+}
+@media (max-width: 576px) {
+  .registration-form {
+    padding: 5rem 0;
+  }
+}
+.registration-form .get-involved {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .registration-form .get-involved {
+    display: none;
+  }
+}
+.registration-form .get-involved h1 {
+  color: #03613f;
+  font-weight: bolder;
+}
+@media (min-width: 768px) {
+  .registration-form .get-involved h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .registration-form .get-involved h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .registration-form .get-involved h1 {
+    font-size: 80px;
+  }
+}
+.registration-form .login-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 20px;
+}
+@media (max-width: 576px) {
+  .registration-form .login-container {
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+}
+.registration-form .form-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+.registration-form .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+.registration-form .intro h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .registration-form .intro h1 {
+    display: none;
+  }
+}
+.registration-form .intro h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  .registration-form .intro h2 {
+    font-size: 1.7rem;
+  }
+}
+.registration-form form {
+  width: 100%;
+}
+.registration-form form .form-control,
+.registration-form form .form-select {
+  min-height: 40px;
+  padding: 5px 10px;
+  margin-bottom: 2rem;
+  font-size: 14px;
+  color: #333333;
+}
+.registration-form form .form-control:focus-visible, .registration-form form .form-control:focus,
+.registration-form form .form-select:focus-visible,
+.registration-form form .form-select:focus {
+  border-color: #333333 !important;
+}
+.registration-form form .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+@media (max-width: 576px) {
+  .registration-form form .form-check {
+    gap: 0;
+  }
+}
+.registration-form form .form-check .form-check-input {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.registration-form form .form-check label {
+  font-size: 14px;
+}
+@media (max-width: 576px) {
+  .registration-form form .form-check label {
+    font-size: 13px;
+  }
+}
+.registration-form form .form-check label a {
+  font-size: 14px !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #ff4340 !important;
+}
+@media (max-width: 768px) {
+  .registration-form form .submit {
+    margin-top: 2rem;
+  }
+}
+.registration-form form .submit button.submit-btn {
+  background-image: linear-gradient(40deg, #03613f, #51b854);
+  color: #ffffff;
+  border: 1px solid #03613f;
+  border-radius: 30px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 200px;
+  text-transform: uppercase;
+  height: 40px;
+  font-size: 16px;
+  display: grid;
+  margin: 31px auto 0;
+  place-content: center;
+}
+@media (max-width: 768px) {
+  .registration-form form .submit button.submit-btn {
+    width: 160px;
+    height: 40px;
+    margin: auto;
+  }
+}
+.registration-form form .submit button.submit-btn:hover {
+  background: transparent;
+  border: 1px solid #03613f;
+  color: #03613f;
+}
+.registration-form .outro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.registration-form .outro .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+.registration-form .outro .socials .social-btn {
+  height: 32px;
+  width: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 120ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 120ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.registration-form .outro .socials .social-btn p {
+  display: none;
+}
+.registration-form .outro .socials .social-btn:hover {
+  width: auto;
+  border-radius: 100px;
+  -webkit-transition: all 120ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: all 120ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.registration-form .outro .socials .social-btn:hover p {
+  display: block;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 14px !important;
+  padding: 0 15px;
+}
+.registration-form .outro #fb-btn {
+  background-image: url("../img/icons/fb.svg");
+}
+.registration-form .outro #fb-btn:hover {
+  background-image: none;
+  background-color: #1877f2;
+}
+.registration-form .outro #g-btn {
+  background-image: url("../img/icons/google.svg");
+}
+.registration-form .outro #g-btn:hover {
+  background-image: none;
+  background-color: #ff4340;
+}
+.registration-form .outro .outro p {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,218 @@
+.registration-form {
+  @include DeviceMinimum768 {
+    background-image: linear-gradient(
+        -90deg,
+        rgba(255, 255, 255, 0.9) 58.44%,
+        rgba($colorYellow, 0.9) 41.66%
+      ),
+      url("../img/hero-02.jpg");
+  }
+  @include DeviceMaximum768 {
+    background-image: linear-gradient(
+        -90deg,
+        rgba($colorYellow, 0.7) 58.44%,
+        rgba($colorYellow, 0.7) 41.66%
+      ),
+      url("../img/hero-02.jpg");
+  }
+  padding: 10rem 0;
+  @include DeviceMaximum576 {
+    padding: 5rem 0;
+  }
+  .get-involved {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    @include DeviceMaximum768 {
+      display: none;
+    }
+    h1 {
+      color: $colorPrimary;
+
+      font-weight: bolder;
+      @include DeviceMinimum768 {
+        font-size: 50px;
+      }
+      @include DeviceMinimum992 {
+        font-size: 70px;
+      }
+      @include DeviceMinimum1200 {
+        font-size: 80px;
+      }
+    }
+  }
+  .login-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: $colorWhite;
+    padding: 50px;
+    border-radius: 20px;
+    @include DeviceMaximum576 {
+      padding: 25px 20px;
+      border-radius: 10px;
+    }
+  }
+
+  .form-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.6rem;
+    width: 100%;
+    h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      @include DeviceMinimum768 {
+        display: none;
+      }
+    }
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      @include DeviceMaximum576 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  form {
+    width: 100%;
+    .form-control,
+    .form-select {
+      min-height: 40px;
+      padding: 5px 10px;
+      margin-bottom: 2rem;
+      font-size: 14px;
+      color: $colorTertiary;
+      &:focus-visible,
+      &:focus {
+        border-color: $colorTertiary !important;
+      }
+    }
+    .form-check {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @include DeviceMaximum576 {
+        gap: 0;
+      }
+      .form-check-input {
+        transform: scale(1.5);
+      }
+      label {
+        font-size: 14px;
+        @include DeviceMaximum576 {
+          font-size: 13px;
+        }
+        a {
+          font-size: 14px !important;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: $colorPink !important;
+        }
+      }
+    }
+    .submit {
+      @include DeviceMaximum768 {
+        margin-top: 2rem;
+      }
+      button.submit-btn {
+        background-image: $gradientOne;
+        color: $colorWhite;
+        border: 1px solid $colorPrimary;
+        border-radius: 30px;
+        transition: $transition04s;
+        width: 200px;
+        text-transform: uppercase;
+        height: 40px;
+        font-size: 16px;
+        display: grid;
+        margin: 31px auto 0;
+        place-content: center;
+        @include DeviceMaximum768 {
+          width: 160px;
+          height: 40px;
+          margin: auto;
+        }
+        &:hover {
+          background: transparent;
+          border: 1px solid $colorPrimary;
+          color: $colorPrimary;
+        }
+      }
+    }
+  }
+  .outro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .socials {
+      display: flex;
+      gap: 1.5rem;
+      .social-btn {
+        height: 32px;
+        width: 32px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 120ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+        p {
+          display: none;
+        }
+        &:hover {
+          width: auto;
+          border-radius: 100px;
+          transition: all 120ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+          p {
+            display: block;
+            color: $colorWhite;
+            font-weight: 500;
+            margin-bottom: 0;
+            font-size: 14px !important;
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+
+    #fb-btn {
+      background-image: url("../img/icons/fb.svg");
+    }
+
+    #fb-btn:hover {
+      background-image: none;
+      background-color: $colorFacebook;
+    }
+
+    #g-btn {
+      background-image: url("../img/icons/google.svg");
+    }
+
+    #g-btn:hover {
+      background-image: none;
+      background-color: $colorPink;
+    }
+
+    .outro p {
+      font-size: 0.8rem;
+    }
+  }
+}

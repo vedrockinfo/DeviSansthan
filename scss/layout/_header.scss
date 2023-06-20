@@ -1,4 +1,118 @@
 header {
+  .middleheader {
+    background: $colorTertiary;
+    padding: 20px 0;
+    .container {
+      @media screen and (max-width: 1200px) {
+        max-width: 90%;
+        padding: 0;
+      }
+    }
+    @include DeviceMaximum768 {
+      display: none;
+    }
+    .how-contact {
+      a:hover {
+        border-bottom: 1px solid $colorWhite;
+      }
+    }
+    .how-contact,
+    .help-support {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin-bottom: 0;
+        li {
+          color: $colorWhite;
+          font-size: 14px !important;
+          list-style: none;
+          a,
+          span {
+            color: $colorWhite;
+            font-size: 14px !important;
+            @media screen and (max-width: 1200px) and (min-width: 992px) {
+              font-size: 13px !important;
+            }
+          }
+        }
+      }
+    }
+    .help-support {
+      ul {
+        justify-content: flex-end;
+        li.support {
+          // margin-right: 20px;
+          a {
+            text-transform: uppercase;
+            border: 1px solid;
+            padding: 4px 15px;
+            border-radius: 30px;
+          }
+        }
+        li.login {
+          display: none;
+          a {
+            text-transform: uppercase;
+            border: 1px solid;
+            padding: 4px 15px;
+            border-radius: 30px;
+          }
+        }
+        li.signup {
+          a {
+            text-transform: uppercase;
+            color: $colorTertiary;
+            background: $colorWhite;
+            border: 1px solid;
+            padding: 4px 15px;
+            border-radius: 30px;
+            transition: $transition04s;
+            &:hover {
+              background: transparent;
+              color: $colorWhite;
+            }
+          }
+        }
+      }
+    }
+  }
+  .middleheaderformobile {
+    @include DeviceMinimum768 {
+      display: none;
+    }
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 7;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0;
+      margin: 0;
+      li {
+        text-align: center;
+        padding: 10px;
+        &:nth-child(1) {
+          grid-column-end: span 2;
+          background: $colorPink;
+          text-transform: uppercase;
+        }
+        &:nth-child(2) {
+          background: rgba($colorPrimary, $alpha: 1);
+        }
+        &:nth-child(3) {
+          background: rgba($colorSecondary, $alpha: 1);
+        }
+        a,
+        span {
+          color: $colorWhite;
+        }
+      }
+    }
+  }
   position: absolute;
   width: 100%;
   @include DeviceMaximum992 {
@@ -27,11 +141,11 @@ header {
       text-align: right;
     }
     img[alt="Logo"] {
-      max-width: 350px;
+      max-width: 250px;
       height: auto;
     }
     img[alt="Global Dream"] {
-      max-width: 150px;
+      max-width: 50%;
       height: auto;
     }
   }
