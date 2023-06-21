@@ -65,7 +65,7 @@ header {
             text-transform: uppercase;
             color: $colorTertiary;
             background: $colorWhite;
-            border: 1px solid;
+            border: 1px solid $colorWhite;
             padding: 4px 15px;
             border-radius: 30px;
             transition: $transition04s;

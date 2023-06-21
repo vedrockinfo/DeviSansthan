@@ -930,7 +930,7 @@ header .middleheader .help-support ul li.signup a {
   text-transform: uppercase;
   color: #333333;
   background: #ffffff;
-  border: 1px solid;
+  border: 1px solid #ffffff;
   padding: 4px 15px;
   border-radius: 30px;
   -webkit-transition: all 0.4s;
