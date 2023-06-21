@@ -119,3 +119,8 @@ jQuery(document).ready(function () {
   //  $(document).ready(checkOffset);
   $(document).scroll(checkOffset);
 });
+
+function choosevol() {
+  var hiddenDiv = document.getElementById("volunteers");
+  hiddenDiv.style.display = "block";
+}

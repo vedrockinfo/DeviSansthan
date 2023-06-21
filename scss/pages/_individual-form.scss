@@ -1,0 +1,233 @@
+.individual-form {
+  padding: 8rem 0;
+  background-image: linear-gradient(
+      -90deg,
+      rgba($colorSecondaryBG, 0.9) 58.44%,
+      rgba($colorSecondaryBG, 0.9) 41.66%
+    ),
+    url("../img/bg2.jpg");
+  background-size: 115% 100%;
+  background-repeat: no-repeat;
+  @include DeviceMaximum576 {
+    padding: 5rem 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: $colorPrimary;
+    margin-bottom: 5rem;
+  }
+  .form-area {
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  form {
+    width: 100%;
+    .form-control,
+    .form-select {
+      min-height: 40px;
+      padding: 5px 10px;
+      margin-bottom: 2rem;
+      font-size: 14px;
+      color: $colorTertiary;
+      &:focus-visible,
+      &:focus {
+        border-color: $colorTertiary !important;
+      }
+    }
+    .support {
+      position: relative;
+      input[type="radio"] {
+        display: none;
+        &:checked + label {
+          background: $colorPrimary;
+          color: $colorWhite;
+        }
+      }
+      #pleasesuggest {
+        display: none;
+      }
+      input#suggest:checked ~ input#pleasesuggest {
+        display: block;
+      }
+      label {
+        display: block;
+        padding: 20px;
+        border: 1px solid $colorPrimary;
+        margin-bottom: 2rem;
+        border-radius: 50px;
+        text-align: center;
+        transition: $transition04s;
+        font-weight: 700;
+        @include DeviceMaximum576 {
+          padding: 10px;
+        }
+        cursor: pointer;
+        &:hover {
+          background: rgba($colorSecondary, $alpha: 0.2);
+        }
+      }
+    }
+    .lend-hand {
+      position: relative;
+      input[type="radio"] {
+        display: none;
+        &:checked + label .r-btn::before {
+          opacity: 1;
+        }
+      }
+
+      label {
+        padding-left: 40px;
+        margin-bottom: 2rem;
+        transition: $transition04s;
+        font-weight: 700;
+        cursor: pointer;
+        .r-btn {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 25.59px;
+          width: 25.59px;
+          border-radius: 50%;
+          border: 3px solid $colorPrimary;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1.3rem;
+            height: 1.3rem;
+            background-color: $colorPrimary;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+    .newsletter {
+      display: inline-block;
+      position: relative;
+      input[type="checkbox"] {
+        display: none;
+        &:checked + label .ch-btn::before {
+          opacity: 1;
+        }
+      }
+      label {
+        padding-left: 40px;
+        margin-bottom: 2rem;
+        transition: $transition04s;
+        font-weight: 700;
+        cursor: pointer;
+        .ch-btn {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 25.59px;
+          width: 25.59px;
+          border: 3px solid $colorPrimary;
+          @include DeviceMaximum576 {
+            left: 10px;
+          }
+          &::before {
+            content: "\f00c";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-family: "Font Awesome 6 Free";
+            color: $colorPrimary;
+            font-weight: 900;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            opacity: 0;
+            font-size: 18px;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+    label.im {
+      margin-bottom: 2rem;
+    }
+    label {
+      font-size: 16px;
+      @include DeviceMaximum576 {
+        font-size: 13px;
+      }
+    }
+    #volunteers {
+      display: none;
+    }
+    p.received {
+      padding-bottom: 20px;
+    }
+    p strong {
+      background: $colorYellow;
+      padding: 5px 15px;
+      text-transform: uppercase;
+      font-size: 14px;
+      @include DeviceMaximum768 {
+        display: block;
+        width: fit-content;
+        margin: auto;
+      }
+    }
+    textarea {
+      font-size: 14px;
+      border-radius: 3px;
+      padding: 10px 15px;
+      resize: none;
+      height: 200px;
+      margin-top: 20px;
+      @include DeviceMaximum576 {
+        margin: 20px auto;
+        width: calc(100% - 20px);
+        height: 120px;
+      }
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    .submit {
+      @include DeviceMaximum768 {
+        margin-top: 2rem;
+      }
+      button.submit-btn {
+        background-image: $gradientOne;
+        color: $colorWhite;
+        border: 1px solid $colorPrimary;
+        border-radius: 30px;
+        transition: $transition04s;
+        width: 200px;
+        text-transform: uppercase;
+        height: 40px;
+        font-size: 16px;
+        display: grid;
+        margin: 31px auto 0;
+        place-content: center;
+        @include DeviceMaximum768 {
+          width: 160px;
+          height: 40px;
+          margin: auto;
+        }
+        &:hover {
+          background: transparent;
+          border: 1px solid $colorPrimary;
+          color: $colorPrimary;
+        }
+      }
+    }
+  }
+  @include DeviceMinimum768 {
+    .lend.row {
+      width: 70%;
+      margin: 15px auto 0;
+    }
+  }
+}

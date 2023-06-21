@@ -232,106 +232,268 @@
     </header>
 
     <main>
-      <section class="pageBanner gac">
+      <section class="individual-form">
         <div class="container">
-          <h1>Aïcha Bah Diallo (Kenya)</h1>
-        </div>
-      </section>
-      <section class="globalAdvisorySection">
-        <div class="container">
-          <div class="committee-members">
-            <div class="row">
-              <div class="col-lg-12 col-md-12">
-                <div class="global-testimonials-image">
-                  <img
-                    src="img/team/AichaBahDiallo.jpg"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12">
-                <div class="global-testimonials-content">
-                  <div class="country">
-                    <div class="info">
-                      <h3>Aïcha Bah Diallo (Kenya)</h3>
-                      <span>Founding Member of FAWE</span>
-                    </div>
-                    <div class="flag">
-                      <img src="img/flags/Af.svg" alt="af" class="img-fluid" />
+          <div class="row">
+            <h1>Welcome to DEVI Sansthan</h1>
+            <div class="form-area">
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <input
+                        type="text"
+                        id="fullname"
+                        class="form-control"
+                        placeholder="Devi Sansthan Name"
+                        disabled
+                      />
                     </div>
                   </div>
-                  <div class="designation">
-                    <p>
-                      Member of the Forum for African Women Educationalists
-                      (FAWE)
-                    </p>
+                  <div class="col-md-6">
+                    <div class="row align-items-center">
+                      <div class="col-2 text-center">
+                        <label class="im">I am : </label>
+                      </div>
+                      <div class="col-10">
+                        <div class="select-row">
+                          <select class="form-select" required>
+                            <option selected="selected" value="000000">
+                              --Select your Country--
+                            </option>
+                            <option value="1">Individual</option>
+                            <option value="2">Government</option>
+                            <option value="3">International Agency</option>
+                            <option value="4">Corporation / Donor</option>
+                            <option value="5">NGO</option>
+                            <option value="6">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <i class="icon fa-solid fa-quote-left"></i>
-                  <p>
-                    Known as champion of girls’ education, Ms Aïcha Bah Diallo
-                    is a founding member of the Forum for African Women
-                    Educationalists (FAWE). She is chair of the Network for
-                    Education for All in Africa (REPTA), Chair of Aide et Action
-                    International (AEAI) and member of the Mo Ibrahim Foundation
-                    Prize Committee for Good Governance and Leadership in
-                    Africa. Ms Bah Diallo is member of Réseau des Femmes pour
-                    l’Egalité Femmes-Hommes (RF-EFH: OIF), and a special Advisor
-                    to The DG of ISESCO. She was a guest of the First Ladies of
-                    the USA, Mrs Bush and Mrs Obama to the meeting organized for
-                    the First Ladies of Africa during the August 4-6, 2014
-                    Summit America-Africa. Ms Bah Diallo was member of the
-                    Technical Advisory Panel (TAP) to the Global Partnership of
-                    Education (GPE, World Bank). She was member of the WISE
-                    Prize Committee. Ms Bah Diallo was Minister of Education in
-                    Guinea from 1989 to 1996 where she pioneered lowering
-                    barriers to education for girls. During her tenure girls
-                    enrolled in school surged from 113,000 to 233,000. She is
-                    recognized as a key leader of educational reform in Guinea
-                    and in Africa where she is highly respected for her
-                    achievements. Ms Bah Diallo succeeded in preparing,
-                    negotiating, and implementing the « Programme d’Ajustement
-                    Sectoriel de l’Education (PASE) » with the coordination of
-                    all key education donors. In the same vain, she prepared and
-                    negotiated the second PASE. She prepared the policy for
-                    Technical and Vocational Education, organized the donors
-                    contributions and obtained their financial support before
-                    leaving the Department to join UNESCO. From 1996 to 2005, Ms
-                    Bah Diallo was a senior education leader of UNESCO and
-                    serving as Director of Basic Education. She was appointed,
-                    Deputy Assistant Director General for Education, and
-                    Assistant Director General for Education. She continued as
-                    advisor to the Director General of UNESCO from 2005 to 2009.
-                    In Guinea many private as well as public schools are named
-                    after her. She has also received many distinctions:
-                    Commandeur des Palmes Académiques Françaises, Officier de
-                    l’Ordre Nationale de Côte d’Ivoire, Chevalier de l’Ordre
-                    nationale du Mérite de Guinée, Médaille d’Honneur du travail
-                    de Guinée, Premios Magisterio Protagonistas de la Educacion
-                    2015 (Madrid) She received the « Outstanding Woman
-                    Leadership Award (2013) », and was one of Top 100 Most
-                    Influential Africans in 2013 and 2014. Ms Bah Diallo speaks
-                    French, English, Spanish, Fulfulde (Pular), Sousou, and
-                    Malinke. She authored many articles on education, in
-                    particular women and girls’ education. Ms Bah Diallo has a
-                    Bachelor degree (Chemistry) from Penn State University
-                    (USA), and a post graduate degree in Biochemistry from Gamal
-                    Abdel Nasser (Guinea).
-                  </p>
                 </div>
-              </div>
+
+                <!-- <p><strong>INTEREST AREAS:</strong></p> -->
+                <p><strong>Donate</strong></p>
+                <!-- <p class="text-center mb-0">Partner for Change</p>
+                      <p class="text-center">Donate</p> -->
+                <div class="row">
+                  <div class="col-12">
+                    <span class="text-center d-block mb-3"
+                      ><strong>Financial Support</strong></span
+                    >
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <div class="support">
+                      <input
+                        type="radio"
+                        id="monthly"
+                        name="FinancialSupport"
+                        value="Monthly"
+                      /><label for="monthly">Monthly</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <div class="support">
+                      <input
+                        type="radio"
+                        id="yearly"
+                        name="FinancialSupport"
+                        value="Yearly"
+                      /><label for="yearly">Yearly</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <div class="support">
+                      <input
+                        type="radio"
+                        id="onetime"
+                        name="FinancialSupport"
+                        value="One Time"
+                      /><label for="onetime">One Time</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row my-3">
+                  <div class="col-12">
+                    <span class="text-center d-block mb-3"
+                      ><strong>Non-Financial Support</strong></span
+                    >
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <div class="support">
+                      <input
+                        type="radio"
+                        id="inkindsupport"
+                        name="Non-FinancialSupport"
+                        value="In-kind Support"
+                      /><label for="inkindsupport">In-kind Support</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <div class="support">
+                      <input
+                        type="radio"
+                        id="services"
+                        name="Non-FinancialSupport"
+                        value="Services"
+                      /><label for="services">Services</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <div class="support">
+                      <input
+                        type="radio"
+                        id="suggest"
+                        name="Non-FinancialSupport"
+                        value="Other, please suggest"
+                      /><label for="suggest">Other, please suggest</label>
+                      <input
+                        type="text"
+                        name="please suggest"
+                        id="pleasesuggest"
+                        placeholder="Please Suggest"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p><strong>Lend-A-Hand</strong></p>
+                  </div>
+                  <div class="lend row">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="lend-hand">
+                        <input
+                          type="radio"
+                          id="BecomeFriend"
+                          name="Become Friend"
+                          value="Become a Friend"
+                        /><label for="BecomeFriend"
+                          ><div class="r-btn"></div>
+                          Become a Friend</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <div class="lend-hand">
+                        <input
+                          type="radio"
+                          id="Volunteer"
+                          name="Become Friend"
+                          value="Volunteer"
+                          onclick="choosevol()"
+                        /><label for="Volunteer"
+                          ><div class="r-btn"></div>
+                          Volunteer</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="select-row" id="volunteers">
+                  <select class="form-select" required>
+                    <option selected="selected" value="000000">
+                      --Select Volunteer--
+                    </option>
+                    <option value="Develop Strategy/Consult">
+                      Develop Strategy/Consult
+                    </option>
+                    <option value="Lead Change/Develop Network">
+                      Lead Change/Develop Network
+                    </option>
+                    <option value="Improve Social Media Outreach">
+                      Improve Social Media Outreach
+                    </option>
+                    <option value="Write Blogs and Stories of Change">
+                      Write Blogs and Stories of Change
+                    </option>
+                    <option value="Become a Trainer">Become a Trainer</option>
+                    <option value="Become a Trainer">
+                      Help with Content Development
+                    </option>
+                    <option value="Become an Intern">Become an Intern</option>
+                    <option value="Join as an Employee">
+                      Join as an Employee
+                    </option>
+                  </select>
+                </div>
+                <div class="row">
+                  <p class="received"><strong>Receive</strong></p>
+                  <div class="newsletter">
+                    <input
+                      type="checkbox"
+                      id="NewslettersReports"
+                      name="Newsletters/Reports"
+                      value="Newsletters/Reports"
+                    />
+                    <label for="NewslettersReports"
+                      ><div class="ch-btn"></div>
+                      Newsletters & Reports</label
+                    >
+                  </div>
+                  <div class="newsletter">
+                    <input
+                      type="checkbox"
+                      id="goodmagazine"
+                      name="GoodMagazine"
+                      value="GoodMagazine"
+                    />
+                    <label for="goodmagazine"
+                      ><div class="ch-btn"></div>
+                      10X Good Magazine</label
+                    >
+                  </div>
+                  <div class="newsletter">
+                    <input
+                      type="checkbox"
+                      id="ConferencesEvents"
+                      name="Conferences/Events"
+                      value="Conferences"
+                    />
+                    <label for="ConferencesEvents"
+                      ><div class="ch-btn"></div>
+                      Conferences & Events</label
+                    >
+                  </div>
+                  <div class="newsletter">
+                    <input
+                      type="checkbox"
+                      id="TrainingOpportunities"
+                      name="Training_Opportunities"
+                      value="Training_Opportunities"
+                    />
+                    <label for="TrainingOpportunities"
+                      ><div class="ch-btn"></div>
+                      Training Opportunities</label
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Comments and Compliments"
+                  ></textarea>
+                </div>
+
+                <div class="submit">
+                  <button type="submit" class="submit-btn">donate</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
-      <div class="bottomspace"></div>
     </main>
 
     <!-- Footer Section  -->
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-md-3">
             <h4 class="quicklinks">about devisansthan</h4>
             <p class="footercontent">
               Global Dream is the product of years of trial and error based on
@@ -340,7 +502,7 @@
               thinking.
             </p>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-md-3">
             <h4 class="quicklinks">Quick Links</h4>
             <ul class="footer-links">
               <li><a href="#">About Us</a></li>
@@ -350,7 +512,7 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-md-3">
             <h4 class="quicklinks">External Links</h4>
             <ul class="footer-links">
               <li><a href="#">Dr Sunita Gandhi</a></li>
@@ -359,7 +521,7 @@
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-md-3">
             <h4 class="quicklinks">Get in Touch</h4>
             <ul class="gettouch">
               <li>
