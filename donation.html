@@ -235,9 +235,13 @@
       <section class="pageBanner donate">
         <div class="container">
           <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-              <div class="donation-form">
+            <div class="col-lg-6 col-md-12"></div>
+            <div class="col-lg-6 col-md-12">
+              <div
+                class="donation-form"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
                 <h1>Donate to Devi Sansthan</h1>
                 <h6>One Click, Lasting Impact</h6>
                 <ul
@@ -297,33 +301,43 @@
                         <div class="currency">
                           <input
                             type="radio"
-                            id="monthly"
-                            name="FinancialSupport"
-                            value="Monthly"
-                          /><label for="monthly">500</label>
+                            id="inmonth500"
+                            name="Monthly"
+                            value="donating"
+                          /><label for="inmonth500">500</label>
                         </div>
                       </div>
                       <div class="donation-value two">
                         <div class="currency">
                           <input
                             type="radio"
-                            id="monthly"
-                            name="FinancialSupport"
-                            value="Monthly"
-                          /><label for="monthly">1000</label>
+                            id="inmonth1000"
+                            name="Monthly"
+                            value="donating"
+                          /><label for="inmonth1000">1000</label>
                         </div>
                       </div>
                       <div class="donation-value three">
                         <div class="currency">
                           <input
                             type="radio"
-                            id="monthly"
-                            name="FinancialSupport"
-                            value="Monthly"
-                          /><label for="monthly">2000</label>
+                            id="inmonth2000"
+                            name="Monthly"
+                            value="donating"
+                          /><label for="inmonth2000">2000</label>
                         </div>
                       </div>
                     </div>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Other Amount"
+                      class="form-control"
+                    />
+                    <button type="submit" class="submit-btn">
+                      proceed to debit
+                    </button>
                   </div>
                   <div
                     class="tab-pane fade"
@@ -331,7 +345,48 @@
                     role="tabpanel"
                     aria-labelledby="yearly"
                   >
-                    Tab 2 content
+                    <div class="donation-amount">
+                      <div class="donation-value one">
+                        <div class="currency">
+                          <input
+                            type="radio"
+                            id="inyear500"
+                            name="Monthly"
+                            value="donatingyear"
+                          /><label for="inyear500">500</label>
+                        </div>
+                      </div>
+                      <div class="donation-value two">
+                        <div class="currency">
+                          <input
+                            type="radio"
+                            id="inyear1000"
+                            name="Monthly"
+                            value="donatingyear"
+                          /><label for="inyear1000">1000</label>
+                        </div>
+                      </div>
+                      <div class="donation-value three">
+                        <div class="currency">
+                          <input
+                            type="radio"
+                            id="inyear2000"
+                            name="Monthly"
+                            value="donatingyear"
+                          /><label for="inyear2000">2000</label>
+                        </div>
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Other Amount"
+                      class="form-control"
+                    />
+                    <button type="submit" class="submit-btn">
+                      proceed to debit
+                    </button>
                   </div>
                   <div
                     class="tab-pane fade"
@@ -339,10 +394,345 @@
                     role="tabpanel"
                     aria-labelledby="Onetime"
                   >
-                    Tab 3 content
+                    <div class="donation-amount">
+                      <div class="donation-value one">
+                        <div class="currency">
+                          <input
+                            type="radio"
+                            id="inonetime500"
+                            name="Monthly"
+                            value="donatingtime"
+                          /><label for="inonetime500">500</label>
+                        </div>
+                      </div>
+                      <div class="donation-value two">
+                        <div class="currency">
+                          <input
+                            type="radio"
+                            id="inonetime1000"
+                            name="Monthly"
+                            value="donatingtime"
+                          /><label for="inonetime1000">1000</label>
+                        </div>
+                      </div>
+                      <div class="donation-value three">
+                        <div class="currency">
+                          <input
+                            type="radio"
+                            id="inonetime2000"
+                            name="Monthly"
+                            value="donatingtime"
+                          /><label for="inonetime2000">2000</label>
+                        </div>
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Other Amount"
+                      class="form-control"
+                    />
+                    <button type="submit" class="submit-btn">
+                      proceed to debit
+                    </button>
                   </div>
                 </div>
                 <!-- Tabs content -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="donation-cards">
+        <div class="container">
+          <h1 class="secondary-heading text-center">
+            A few tips for better giving
+          </h1>
+          <div class="space-one"></div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="icon">
+                  <img
+                    src="./img/icons/volunteer.png"
+                    alt="icon"
+                    class="img-fluid"
+                  />
+                </div>
+                <h3 class="tertiary-heading">Volunteer</h3>
+                <p>
+                  You can contribute to a range of work that helps children and
+                  families around the world.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="icon">
+                  <img
+                    src="./img/icons/volunteer.png"
+                    alt="icon"
+                    class="img-fluid"
+                  />
+                </div>
+                <h3 class="tertiary-heading">Volunteer</h3>
+                <p>
+                  You can contribute to a range of work that helps children and
+                  families around the world.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="icon">
+                  <img
+                    src="./img/icons/volunteer.png"
+                    alt="icon"
+                    class="img-fluid"
+                  />
+                </div>
+                <h3 class="tertiary-heading">Volunteer</h3>
+                <p>
+                  You can contribute to a range of work that helps children and
+                  families around the world.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="icon">
+                  <img
+                    src="./img/icons/volunteer.png"
+                    alt="icon"
+                    class="img-fluid"
+                  />
+                </div>
+                <h3 class="tertiary-heading">Volunteer</h3>
+                <p>
+                  You can contribute to a range of work that helps children and
+                  families around the world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="what-we-do">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <div
+                class="devi-images-section"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                <div class="devi-img">
+                  <img src="img/raise-fund.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="content">
+                <h3 class="tertiary-heading">WHAT WE DO</h3>
+                <h2 class="secondary-heading">
+                  We raise money for Education Need
+                </h2>
+                <div class="para-one">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia incidunt rerum repellendus soluta pariatur quaerat
+                    a? Expedita error, dignissimos, architecto at dolorum quasi
+                    beatae reprehenderit excepturi iure officiis explicabo eius
+                    iusto. Dolorum adipisci quaerat aliquid nobis libero
+                    exercitationem, facere vel ipsa, aut sint repellendus minima
+                    quis quisquam quae nam ex.
+                  </p>
+                </div>
+                <div class="link-one">
+                  <a class="btn" href="#" role="button">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="donation-raised">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="fund-raised">
+                <i class="fa fa-inr" aria-hidden="true"></i> 12 ,750,000
+              </h2>
+              <h6>Total have been rased this year</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+                atque, quia facilis, nam culpa exercitationem nesciunt animi
+                quibusdam commodi iure tempore laboriosam quam vel ullam ipsum
+                id odit cumque quo voluptatibus nulla minima dignissimos
+                delectus. Quibusdam doloribus temporibus voluptate molestias at
+                labore eos rem quia dolor ipsum nihil porro, error doloremque ad
+                magni, dolore asperiores distinctio aperiam quisquam suscipit.
+                Laudantium.
+              </p>
+              <div class="link-two text-center">
+                <a class="btn" href="#" role="button">Donate More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-do-we-work">
+        <div class="container">
+          <h2 class="secondary-heading text-center">How Do We Work?</h2>
+          <div class="space-one"></div>
+          <p>
+            Plan India has always worked towards causes that will not only help
+            the world become a better place but also help inspire the victims to
+            reach a stage where they can contribute towards global growth. Our
+            organized planning and thorough research have helped us work
+            efficiently and achieve a fast-response rate.
+          </p>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <p><strong>Our areas of focus are:</strong></p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis, obcaecati.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, illo maiores.
+                </li>
+                <li>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto voluptatibus illo aut et quas vitae?
+                </li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div
+                class="devi-images-section"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
+                <div class="devi-img">
+                  <img src="img/how-we-work.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="row">
+            <h2 class="secondary-heading text-center">
+              Frequently asked questions
+            </h2>
+            <div class="space-one"></div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Frequently asked questions no -1
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-mdb-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    aspernatur cupiditate distinctio quas sequi dolorum
+                    architecto a debitis ab aperiam, maiores dolores ad
+                    excepturi sunt quia aliquid. In, animi corrupti?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Frequently asked questions no-2
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-mdb-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Sint neque fuga quae, aperiam, esse expedita nesciunt error
+                    ducimus, voluptates labore veritatis libero officiis
+                    repudiandae distinctio temporibus. Veritatis recusandae eos
+                    asperiores!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-mdb-toggle="collapse"
+                  data-mdb-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Frequently asked questions no-3
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-mdb-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deleniti, magni voluptatum. A id praesentium voluptatem
+                    harum omnis modi ratione obcaecati ducimus alias dolorem.
+                    Sunt obcaecati asperiores, tenetur expedita tempora ut!
+                  </p>
+                </div>
               </div>
             </div>
           </div>

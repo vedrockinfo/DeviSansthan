@@ -22,7 +22,7 @@
   .get-involved {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     height: 100%;
     @include DeviceMaximum768 {
       display: none;
@@ -95,7 +95,7 @@
       min-height: 40px;
       padding: 5px 10px;
       margin-bottom: 2rem;
-      font-size: 14px;
+      font-size: 16px;
       color: $colorTertiary;
       &:focus-visible,
       &:focus {

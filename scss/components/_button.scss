@@ -1,0 +1,25 @@
+button.submit-btn {
+  background-image: $gradientOne;
+  color: $colorWhite;
+  border: 1px solid $colorPrimary;
+  border-radius: 30px;
+  transition: $transition04s;
+  width: 200px;
+  text-transform: uppercase;
+  height: 40px;
+  font-size: 16px;
+  display: grid;
+  margin: 31px auto 0;
+  place-content: center;
+  @include DeviceMaximum768 {
+    width: auto;
+    height: 40px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  &:hover {
+    background: transparent;
+    border: 1px solid $colorPrimary;
+    color: $colorPrimary;
+  }
+}

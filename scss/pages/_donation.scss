@@ -1,10 +1,13 @@
 .pageBanner.donate {
-  background-image: url("../img/pagebanner-01.jpg");
+  background-image: url("../img/pagebanner-02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   min-height: calc(100vh - 276px);
   position: relative;
+  @include DeviceMaximum992 {
+    min-height: auto;
+  }
   &::before {
     content: "";
     background-color: #18181b;
@@ -13,7 +16,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.7;
   }
   .container {
     position: relative;
@@ -37,10 +40,309 @@
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 4rem;
+    @include DeviceMaximum576 {
+      margin-bottom: 2rem;
+    }
   }
   .donation-form {
     background: #fff;
     border-radius: 10px;
     padding: 25px;
+    margin-top: 10rem;
+    @include DeviceMaximum992 {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+    @media screen and (max-height: 850px) {
+      margin-top: 7rem;
+    }
+    li.nav-item {
+      flex: 0 0 33.33%;
+      a {
+        padding: 15px;
+        @include DeviceMaximum768 {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  input.form-control {
+    min-height: 40px;
+    padding: 5px 10px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    font-size: 16px;
+    color: $colorTertiary;
+    border: 1px solid $colorPrimary;
+  }
+  .donation-amount {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0 2rem 0;
+    @include DeviceMaximum576 {
+      margin: 2rem 0;
+    }
+  }
+
+  .donation-value {
+    display: inline-block;
+    label {
+      background: $colorWhite;
+      cursor: pointer;
+      border: 1px solid $colorPrimary;
+      display: block;
+    }
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: 500;
+    @include DeviceMaximum576 {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+
+  .currency {
+    width: 120px;
+    text-align: center;
+    @include DeviceMaximum576 {
+      width: auto;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+    &:checked + label {
+      background-image: $gradientOne;
+      color: $colorWhite;
+    }
+  }
+  .nav-tabs .nav-link {
+    &:hover {
+      background-color: rgba($colorSecondary, $alpha: 0.12);
+      border: none;
+    }
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: $colorWhite;
+    background-image: $gradientOne;
+    border: none;
+  }
+}
+.donation-cards {
+  padding: 7rem 0;
+  @include DeviceMaximum768 {
+    padding: 4rem 0;
+  }
+  .space-one {
+    @include DeviceMaximum768 {
+      margin-bottom: 0;
+    }
+  }
+  .col-md-6 {
+    &:nth-child(1),
+    &:nth-child(2) {
+      .card {
+        @media screen and (max-width: 992px) and (min-width: 768.5px) {
+          margin-bottom: 35px;
+        }
+      }
+    }
+    @include DeviceMinimum768 {
+      padding: 0 20px;
+    }
+  }
+  .card {
+    text-align: center;
+
+    @include DeviceMaximum768 {
+      margin-top: 30px;
+    }
+    background-color: #f5f5f5;
+    padding: 40px 30px;
+    position: relative;
+    transition: all 0.6s ease;
+    @include DeviceMaximum768 {
+      padding: 20px 30px;
+    }
+    &::before {
+      background: $gradientOne;
+      width: 0;
+      height: 3px;
+      left: 0;
+      top: 0;
+      content: "";
+      position: absolute;
+      transition: all 0.6s ease;
+    }
+    &:hover {
+      transform: translateY(-5px);
+      &::before {
+        width: 100%;
+      }
+    }
+    .icon {
+      margin-bottom: 30px;
+      text-align: center;
+      @include DeviceMaximum768 {
+        max-width: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+      }
+    }
+    h3 {
+      padding-bottom: 15px;
+      text-align: center;
+    }
+  }
+}
+.what-we-do {
+  padding: 0 0 7rem 0;
+  @include DeviceMaximum768 {
+    padding: 0 0 4rem 0;
+  }
+
+  @include DeviceMaximum992 {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .content {
+      margin-bottom: 30px;
+    }
+  }
+  img {
+    @include DeviceMinimum992 {
+      padding-right: 30px;
+    }
+  }
+}
+.donation-raised {
+  padding: 7rem 0;
+  @include DeviceMaximum768 {
+    padding: 4rem 0;
+  }
+  background-image: url("../img/bg-03.jpg");
+  // background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: unset;
+  position: relative;
+  &::before {
+    content: "";
+    background: #18181b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    position: relative;
+  }
+  h2.fund-raised {
+    color: $colorWhite;
+    font-size: 90px;
+    font-weight: 700;
+
+    @include DeviceMaximum992 {
+      font-size: 50px;
+    }
+    @include DeviceMaximum576 {
+      font-size: 30px;
+    }
+  }
+  h6 {
+    color: $colorWhite;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 10px 0;
+    @include DeviceMaximum576 {
+      font-size: 20px;
+    }
+  }
+  p {
+    color: $colorWhite;
+    padding-bottom: 20px;
+  }
+}
+.how-do-we-work {
+  padding: 7rem 0;
+  @include DeviceMaximum768 {
+    padding: 4rem 0;
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  .devi-img {
+    position: relative;
+    @include DeviceMaximum992 {
+      margin-top: 30px;
+    }
+    img {
+      transition: all 0.5s;
+      border-radius: 10px;
+    }
+    &:hover::after {
+      left: 20px;
+      top: 20px;
+    }
+    &:hover img {
+      transform: translate(-10px, -10px);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+      @include DeviceMaximum768 {
+        transform: none !important;
+      }
+    }
+    &::after {
+      background: $colorYellow;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: -1;
+      left: 0;
+      position: absolute;
+      border-radius: 10px;
+      transition: all 0.5s;
+      @include DeviceMaximum768 {
+        content: none !important;
+      }
+    }
+  }
+}
+.faq {
+  padding-bottom: 7rem;
+  @include DeviceMaximum768 {
+    padding-bottom: 4rem;
+  }
+  button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 20px;
+    @include DeviceMaximum768 {
+      font-size: 14px;
+    }
+    &:hover {
+      background-color: rgba($colorSecondary, $alpha: 0.12);
+    }
+  }
+  .accordion-button:not(.collapsed) {
+    color: $colorWhite;
+    background-image: $gradientOne;
+    &::after {
+      filter: sepia(2) brightness(2);
+    }
   }
 }

@@ -56,6 +56,29 @@ main {
   }
 }
 
+.link-two a {
+  background: $colorWhite;
+  color: $colorTertiary;
+  border: 1px solid $colorWhite;
+  border-radius: 30px;
+  transition: $transition04s;
+  width: 200px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  margin: auto;
+  @include DeviceMaximum768 {
+    width: 160px;
+    height: 40px;
+    margin: auto;
+  }
+  &:hover {
+    background: transparent;
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+  }
+}
+
 .para-one {
   margin: 2rem 0;
   p {
@@ -65,4 +88,7 @@ main {
 }
 .space-one {
   margin-bottom: 5rem;
+  @include DeviceMaximum576 {
+    margin-bottom: 2rem;
+  }
 }
