@@ -28,6 +28,7 @@ $("#owl-theme").owlCarousel({
   margin: 30,
   autoplay: true,
   nav: true,
+  center: true,
   responsiveClass: true,
   autoHeight: true,
   autoplayTimeout: 7000,
@@ -72,6 +73,7 @@ var owl = $("#globalAdisory").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
+  center: true,
   navText: [
     "<div class='nav-btn prev-slide'></div>",
     "<div class='nav-btn next-slide'></div>",

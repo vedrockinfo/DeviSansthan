@@ -1,15 +1,10 @@
-.section-one {
-  padding: 7rem 0;
+.mt-large {
+  padding-top: 7rem;
   @include DeviceMaximum768 {
-    padding: 4rem 0;
+    padding-top: 4rem;
   }
 }
-.section-two {
-  padding-bottom: 7rem;
-  @include DeviceMaximum768 {
-    padding-bottom: 4rem;
-  }
-}
+
 .alfa {
   padding-top: 7rem;
   @include DeviceMaximum768 {
