@@ -1,593 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MOOT : Massive Open Online Training</title>
-    <link rel="icon" href="./img/logo/favicon.png" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./vendor/css/owl.carousel.min.css" />
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header Section  -->
-    <header>
-      <div class="middleheader">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="how-contact">
-                <ul>
-                  <li>
-                    <a href="tel: +91-7408406000">Call</a> <span>or</span>
-                    <a href="https://wa.me/ +91-7408406000" target="_blank">
-                      Whatsapp</a
-                    >
-                    : <span> +91-740 840 6000</span>
-                  </li>
-                  <li>|</li>
-                  <li>
-                    <a href="mailto:info@dignityeducation.org"
-                      >info@dignityeducation.org</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="help-support">
-                <ul>
-                  <li class="support">
-                    <a href="contact.html">help & support</a>
-                  </li>
-                  <li class="login"><a href="user-info.html">login</a></li>
-                  <li class="signup"><a href="signup.html">sign up</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="middleheaderformobile">
-        <ul>
-          <li class="support">
-            <a href="contact.html">help & support</a>
-          </li>
-          <li>
-            <a href="mailto:info@dignityeducation.org">Email Us</a>
-          </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOOT : Massive Open Online Training</title>
+  <link rel="icon" href="./img/favicon.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./vendor/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./vendor/css/owl.carousel.min.css" />
 
-          <li>
-            <a href="tel: +91-7408406000">Call</a> <span>or</span>
-            <a href="https://wa.me/ +91-7408406000" target="_blank">
-              Whatsapp</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="topheader">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <img src="img/logo/logo.png" alt="Logo" />
-            </div>
-            <div class="col-md-6">
-              <img src="img/logo/ALfALogo.png" alt="Global Dream" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mainheader">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="./img/logo/logo.png" alt="" class="img-fluid" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                    >Home</a
-                  >
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header Section  -->
+  <header>
+    <div class="middleheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="how-contact">
+              <ul>
+                <li>
+                  <a href="tel: +91-7408406000">Call</a> <span>or</span>
+                  <a href="https://wa.me/ +91-7408406000" target="_blank">
+                    Whatsapp</a>
+                  : <span> +91-740 840 6000</span>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">mission</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    innovation
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">innovation dp</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">innovation dp1</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    CALL TO ACTION
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#">CALL TO ACTION dp</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">CALL TO ACTION dp1</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    ENGAGEMENTS
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#">ENGAGEMENTS dp</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">ENGAGEMENTS dp1</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    EVIDENCE & MORE
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item" href="#">EVIDENCE & MORE dp</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">EVIDENCE & MORE dp1</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    EXPERIENCE
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">EXPERIENCE dp</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">EXPERIENCE dp1</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="donation.html">donate</a>
+                <li>|</li>
+                <li>
+                  <a href="mailto:info@dignityeducation.org">info@dignityeducation.org</a>
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="individual-form">
-        <div class="container">
-          <div class="row">
-            <h1>Welcome to DEVI Sansthan</h1>
-            <div class="form-area">
-              <form>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="row align-items-center">
-                      <div class="col-2 text-center">
-                        <label class="im">I am : </label>
-                      </div>
-                      <div class="col-10">
-                        <div class="form-outline">
-                          <input
-                            type="text"
-                            id="fullname"
-                            class="form-control"
-                            placeholder="Devi Sansthan Name"
-                            disabled
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="row align-items-center">
-                      <div class="col-12">
-                        <div class="select-row">
-                          <select class="form-select" required>
-                            <option selected="selected" value="000000">
-                              --Select your Country--
-                            </option>
-                            <option value="1">Individual</option>
-                            <option value="2">Government</option>
-                            <option value="3">International Agency</option>
-                            <option value="4">Corporation / Donor</option>
-                            <option value="5">NGO</option>
-                            <option value="6">Other</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <p><strong>INTEREST AREAS:</strong></p> -->
-                <p><strong>Donate</strong></p>
-                <!-- <p class="text-center mb-0">Partner for Change</p>
-                      <p class="text-center">Donate</p> -->
-                <div class="row">
-                  <div class="col-12">
-                    <span class="text-center d-block mb-3"
-                      ><strong>Financial Support</strong></span
-                    >
-                  </div>
-                  <div class="col-lg-4 col-md-4">
-                    <div class="support">
-                      <input
-                        type="radio"
-                        id="monthly"
-                        name="FinancialSupport"
-                        value="Monthly"
-                      /><label for="monthly">Monthly</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4">
-                    <div class="support">
-                      <input
-                        type="radio"
-                        id="yearly"
-                        name="FinancialSupport"
-                        value="Yearly"
-                      /><label for="yearly">Yearly</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4">
-                    <div class="support">
-                      <input
-                        type="radio"
-                        id="onetime"
-                        name="FinancialSupport"
-                        value="One Time"
-                      /><label for="onetime">One Time</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row my-3">
-                  <div class="col-12">
-                    <span class="text-center d-block mb-3"
-                      ><strong>Non-Financial Support</strong></span
-                    >
-                  </div>
-                  <div class="col-lg-4 col-md-4">
-                    <div class="support">
-                      <input
-                        type="radio"
-                        id="inkindsupport"
-                        name="Non-FinancialSupport"
-                        value="In-kind Support"
-                      /><label for="inkindsupport">In-kind Support</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4">
-                    <div class="support">
-                      <input
-                        type="radio"
-                        id="services"
-                        name="Non-FinancialSupport"
-                        value="Services"
-                      /><label for="services">Services</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4">
-                    <div class="support">
-                      <input
-                        type="radio"
-                        id="suggest"
-                        name="Non-FinancialSupport"
-                        value="Other, please suggest"
-                      /><label for="suggest">Other, please suggest</label>
-                      <input
-                        type="text"
-                        name="please suggest"
-                        id="pleasesuggest"
-                        placeholder="Please Suggest"
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <p><strong>Lend-A-Hand</strong></p>
-                  </div>
-                  <div class="lend row">
-                    <div class="col-lg-6 col-md-6">
-                      <div class="lend-hand">
-                        <input
-                          type="radio"
-                          id="BecomeFriend"
-                          name="Become Friend"
-                          value="Become a Friend"
-                        /><label for="BecomeFriend"
-                          ><div class="r-btn"></div>
-                          Become a Friend</label
-                        >
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="lend-hand">
-                        <input
-                          type="radio"
-                          id="Volunteer"
-                          name="Become Friend"
-                          value="Volunteer"
-                          onclick="choosevol()"
-                        /><label for="Volunteer"
-                          ><div class="r-btn"></div>
-                          Volunteer</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="select-row" id="volunteers">
-                  <select class="form-select" required>
-                    <option selected="selected" value="000000">
-                      --Select Volunteer--
-                    </option>
-                    <option value="Develop Strategy/Consult">
-                      Develop Strategy/Consult
-                    </option>
-                    <option value="Lead Change/Develop Network">
-                      Lead Change/Develop Network
-                    </option>
-                    <option value="Improve Social Media Outreach">
-                      Improve Social Media Outreach
-                    </option>
-                    <option value="Write Blogs and Stories of Change">
-                      Write Blogs and Stories of Change
-                    </option>
-                    <option value="Become a Trainer">Become a Trainer</option>
-                    <option value="Become a Trainer">
-                      Help with Content Development
-                    </option>
-                    <option value="Become an Intern">Become an Intern</option>
-                    <option value="Join as an Employee">
-                      Join as an Employee
-                    </option>
-                  </select>
-                </div>
-                <div class="row">
-                  <p class="received"><strong>Receive</strong></p>
-                  <div class="newsletter">
-                    <input
-                      type="checkbox"
-                      id="NewslettersReports"
-                      name="Newsletters/Reports"
-                      value="Newsletters/Reports"
-                    />
-                    <label for="NewslettersReports"
-                      ><div class="ch-btn"></div>
-                      Newsletters & Reports</label
-                    >
-                  </div>
-                  <div class="newsletter">
-                    <input
-                      type="checkbox"
-                      id="goodmagazine"
-                      name="GoodMagazine"
-                      value="GoodMagazine"
-                    />
-                    <label for="goodmagazine"
-                      ><div class="ch-btn"></div>
-                      10X Good Magazine</label
-                    >
-                  </div>
-                  <div class="newsletter">
-                    <input
-                      type="checkbox"
-                      id="ConferencesEvents"
-                      name="Conferences/Events"
-                      value="Conferences"
-                    />
-                    <label for="ConferencesEvents"
-                      ><div class="ch-btn"></div>
-                      Conferences & Events</label
-                    >
-                  </div>
-                  <div class="newsletter">
-                    <input
-                      type="checkbox"
-                      id="TrainingOpportunities"
-                      name="Training_Opportunities"
-                      value="Training_Opportunities"
-                    />
-                    <label for="TrainingOpportunities"
-                      ><div class="ch-btn"></div>
-                      Training Opportunities</label
-                    >
-                  </div>
-                </div>
-                <div class="row">
-                  <textarea
-                    name=""
-                    id=""
-                    placeholder="Comments and Compliments"
-                  ></textarea>
-                </div>
-
-                <div class="submit">
-                  <button type="submit" class="submit-btn">donate</button>
-                </div>
-              </form>
+          <div class="col-md-6">
+            <div class="help-support">
+              <ul>
+                <li class="support">
+                  <a href="contact.html">help & support</a>
+                </li>
+                <li class="login"><a href="user-info.html">login</a></li>
+                <li class="signup"><a href="signup.html">sign up</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+    <div class="middleheaderformobile">
+      <ul>
+        <li class="support">
+          <a href="contact.html">help & support</a>
+        </li>
+        <li>
+          <a href="mailto:info@dignityeducation.org">Email Us</a>
+        </li>
 
-    <!-- Footer Section  -->
-    <footer>
+        <li>
+          <a href="tel: +91-7408406000">Call</a> <span>or</span>
+          <a href="https://wa.me/ +91-7408406000" target="_blank">
+            Whatsapp</a>
+        </li>
+      </ul>
+    </div>
+    <div class="topheader">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="img/logo.png" alt="Logo" />
+          </div>
+          <div class="col-md-6">
+            <img src="img/ALfALogo.png" alt="Global Dream" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainheader">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logo.png" alt="" class="img-fluid" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">mission</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  innovation
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">innovation dp</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">innovation dp1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  CALL TO ACTION
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">CALL TO ACTION dp</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CALL TO ACTION dp1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  ENGAGEMENTS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">ENGAGEMENTS dp</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">ENGAGEMENTS dp1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  EVIDENCE & MORE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">EVIDENCE & MORE dp</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">EVIDENCE & MORE dp1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  EXPERIENCE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">EXPERIENCE dp</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">EXPERIENCE dp1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donation.html">donate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="individual-form">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
-            <h4 class="quicklinks">about devisansthan</h4>
-            <p class="footercontent">
-              Global Dream is the product of years of trial and error based on
-              international research. This research shows that a
-              student-centered program focused on increasing the student's
-              thinking.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h4 class="quicklinks">Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Impact</a></li>
-              <li><a href="#">Work with Us</a></li>
-              <li><a href="#">Media</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4 class="quicklinks">External Links</h4>
-            <ul class="footer-links">
-              <li><a href="#">Dr Sunita Gandhi</a></li>
-              <li><a href="#">GETI</a></li>
-              <li><a href="#">Global Education</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4 class="quicklinks">Get in Touch</h4>
-            <ul class="gettouch">
-              <li>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+91-7408406000">+91-740 840 6000</a>
-              </li>
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:info@dignityeducation.org"
-                  >info@dignityeducation.org</a
-                >
-              </li>
-              <li>
-                <i class="fa-solid fa-location-dot"></i> 12 Station Road,
-                Lucknow 226001, UP INDIA
-              </li>
-            </ul>
-            <ul class="footer-social-links">
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p>Copyrights © 2023.Devi Sansthan All Rights Reserved</p>
-            </div>
-            <div class="col-md-6">
-              <div class="footer-text">
-                <ul>
-                  <li><a href="#">Privacy Policy Refund </a></li>
-                  <li>|</li>
-                  <li><a href="#">Cancellation Policy</a></li>
-                </ul>
+          <h1>Welcome to DEVI Sansthan</h1>
+          <div class="form-area">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row align-items-center">
+                    <div class="col-2 text-center">
+                      <label class="im">I am : </label>
+                    </div>
+                    <div class="col-10">
+                      <div class="form-outline">
+                        <input type="text" id="fullname" class="form-control" placeholder="Devi Sansthan Name"
+                          disabled />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row align-items-center">
+                    <div class="col-12">
+                      <div class="select-row">
+                        <select class="form-select" required>
+                          <option selected="selected" value="000000">
+                            --Select your Country--
+                          </option>
+                          <option value="1">Individual</option>
+                          <option value="2">Government</option>
+                          <option value="3">International Agency</option>
+                          <option value="4">Corporation / Donor</option>
+                          <option value="5">NGO</option>
+                          <option value="6">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <!-- <p><strong>INTEREST AREAS:</strong></p> -->
+              <p><strong>Donate</strong></p>
+              <!-- <p class="text-center mb-0">Partner for Change</p>
+                      <p class="text-center">Donate</p> -->
+              <div class="row">
+                <div class="col-12">
+                  <span class="text-center d-block mb-3"><strong>Financial Support</strong></span>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="support">
+                    <input type="radio" id="monthly" name="FinancialSupport" value="Monthly" /><label
+                      for="monthly">Monthly</label>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="support">
+                    <input type="radio" id="yearly" name="FinancialSupport" value="Yearly" /><label
+                      for="yearly">Yearly</label>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="support">
+                    <input type="radio" id="onetime" name="FinancialSupport" value="One Time" /><label for="onetime">One
+                      Time</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-12">
+                  <span class="text-center d-block mb-3"><strong>Non-Financial Support</strong></span>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="support">
+                    <input type="radio" id="inkindsupport" name="Non-FinancialSupport" value="In-kind Support" /><label
+                      for="inkindsupport">In-kind Support</label>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="support">
+                    <input type="radio" id="services" name="Non-FinancialSupport" value="Services" /><label
+                      for="services">Services</label>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="support">
+                    <input type="radio" id="suggest" name="Non-FinancialSupport" value="Other, please suggest" /><label
+                      for="suggest">Other, please suggest</label>
+                    <input type="text" name="please suggest" id="pleasesuggest" placeholder="Please Suggest"
+                      class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p><strong>Lend-A-Hand</strong></p>
+                </div>
+                <div class="lend row">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="lend-hand">
+                      <input type="radio" id="BecomeFriend" name="Become Friend" value="Become a Friend" /><label
+                        for="BecomeFriend">
+                        <div class="r-btn"></div>
+                        Become a Friend
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="lend-hand">
+                      <input type="radio" id="Volunteer" name="Become Friend" value="Volunteer"
+                        onclick="choosevol()" /><label for="Volunteer">
+                        <div class="r-btn"></div>
+                        Volunteer
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="select-row" id="volunteers">
+                <select class="form-select" required>
+                  <option selected="selected" value="000000">
+                    --Select Volunteer--
+                  </option>
+                  <option value="Develop Strategy/Consult">
+                    Develop Strategy/Consult
+                  </option>
+                  <option value="Lead Change/Develop Network">
+                    Lead Change/Develop Network
+                  </option>
+                  <option value="Improve Social Media Outreach">
+                    Improve Social Media Outreach
+                  </option>
+                  <option value="Write Blogs and Stories of Change">
+                    Write Blogs and Stories of Change
+                  </option>
+                  <option value="Become a Trainer">Become a Trainer</option>
+                  <option value="Become a Trainer">
+                    Help with Content Development
+                  </option>
+                  <option value="Become an Intern">Become an Intern</option>
+                  <option value="Join as an Employee">
+                    Join as an Employee
+                  </option>
+                </select>
+              </div>
+              <div class="row">
+                <p class="received"><strong>Receive</strong></p>
+                <div class="newsletter">
+                  <input type="checkbox" id="NewslettersReports" name="Newsletters/Reports"
+                    value="Newsletters/Reports" />
+                  <label for="NewslettersReports">
+                    <div class="ch-btn"></div>
+                    Newsletters & Reports
+                  </label>
+                </div>
+                <div class="newsletter">
+                  <input type="checkbox" id="goodmagazine" name="GoodMagazine" value="GoodMagazine" />
+                  <label for="goodmagazine">
+                    <div class="ch-btn"></div>
+                    10X Good Magazine
+                  </label>
+                </div>
+                <div class="newsletter">
+                  <input type="checkbox" id="ConferencesEvents" name="Conferences/Events" value="Conferences" />
+                  <label for="ConferencesEvents">
+                    <div class="ch-btn"></div>
+                    Conferences & Events
+                  </label>
+                </div>
+                <div class="newsletter">
+                  <input type="checkbox" id="TrainingOpportunities" name="Training_Opportunities"
+                    value="Training_Opportunities" />
+                  <label for="TrainingOpportunities">
+                    <div class="ch-btn"></div>
+                    Training Opportunities
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <textarea name="" id="" placeholder="Comments and Compliments"></textarea>
+              </div>
+
+              <div class="submit">
+                <button type="submit" class="submit-btn">donate</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section  -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4 class="quicklinks">about devisansthan</h4>
+          <p class="footercontent">
+            Global Dream is the product of years of trial and error based on
+            international research. This research shows that a
+            student-centered program focused on increasing the student's
+            thinking.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4 class="quicklinks">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Impact</a></li>
+            <li><a href="#">Work with Us</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="quicklinks">External Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Dr Sunita Gandhi</a></li>
+            <li><a href="#">GETI</a></li>
+            <li><a href="#">Global Education</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="quicklinks">Get in Touch</h4>
+          <ul class="gettouch">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+91-7408406000">+91-740 840 6000</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@dignityeducation.org">info@dignityeducation.org</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 12 Station Road,
+              Lucknow 226001, UP INDIA
+            </li>
+          </ul>
+          <ul class="footer-social-links">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Copyrights © 2023.Devi Sansthan All Rights Reserved</p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-text">
+              <ul>
+                <li><a href="#">Privacy Policy Refund </a></li>
+                <li>|</li>
+                <li><a href="#">Cancellation Policy</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- MDB -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
-    ></script>
-    <script src="./vendor/js/bootstrap.min.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./vendor/js/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+    </div>
+  </footer>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+  <script src="./vendor/js/bootstrap.min.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./vendor/js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
