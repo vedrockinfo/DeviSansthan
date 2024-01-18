@@ -18,9 +18,11 @@
   border-radius: 30px;
   transition: $transition04s;
   width: 200px;
+  text-transform: uppercase;
   height: 40px;
   display: grid;
   place-content: center;
+  font-weight: 600;
   @include DeviceMaximum768 {
     width: 160px;
     height: 40px;

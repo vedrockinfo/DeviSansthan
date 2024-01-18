@@ -26,6 +26,7 @@
     line-height: 70px;
     margin: 0;
     font-weight: bold;
+    text-transform: uppercase;
     @include DeviceMaximum576 {
       font-size: 36px;
       line-height: 44px;

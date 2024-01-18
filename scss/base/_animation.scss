@@ -1,11 +1,9 @@
 @keyframes slidetop {
   from {
-    transform: translateY(-30px);
-    opacity: 1;
+    top: 51.5%;
   }
   to {
-    transform: translateY(0);
-    opacity: 1;
+    top: 48.5%;
   }
 }
 

@@ -30,3 +30,35 @@ span {
     text-align: center;
   }
 }
+.toolkit-heads{
+  font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $colorWhite;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 8px 20px;
+    display: inline-block; 
+    &::before{
+      content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $colorPrimary;
+    z-index: -1;
+    transform: skewX(25deg) rotate(-2deg);
+    }
+    &::after{
+      content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $colorYellow;
+    z-index: -2;
+    transform: skewX(25deg) rotate(5deg);
+    }
+}
