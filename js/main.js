@@ -23,30 +23,8 @@ jQuery(document).ready(function () {
 
 AOS.init();
 
-$("#owl-theme").owlCarousel({
-  loop: true,
-  margin: 30,
-  autoplay: true,
-  nav: true,
-  center: true,
-  responsiveClass: true,
-  autoHeight: true,
-  autoplayTimeout: 7000,
-  smartSpeed: 800,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
 
-$("#owl-partners").owlCarousel({
+$(".owl-partners").owlCarousel({
   loop: true,
   margin: 30,
   autoplay: true,
@@ -69,15 +47,12 @@ $("#owl-partners").owlCarousel({
   },
 });
 
-var owl = $("#globalAdisory").owlCarousel({
+$(".globalAdvisor").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
   center: true,
-  navText: [
-    "<div class='nav-btn prev-slide'></div>",
-    "<div class='nav-btn next-slide'></div>",
-  ],
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
   dots: false,
   autoplay: false,
   autoplayTimeout: 3000,
@@ -86,10 +61,10 @@ var owl = $("#globalAdisory").owlCarousel({
       items: 1,
     },
     600: {
-      items: 1,
+      items: 2,
     },
     1000: {
-      items: 1,
+      items: 3,
     },
   },
 });
@@ -112,6 +87,94 @@ $('.hero-carousel').owlCarousel({
     },
     1000: {
       items: 1
+    }
+  }
+})
+
+$('.country-slider').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: true,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 2
+    }
+  }
+})
+
+$('.publications').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: false,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 2
+    }
+  }
+})
+
+$('.newspaper').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  dots: true,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: false,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 3
+    }
+  }
+})
+
+$('.videos').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  dots: true,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: false,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 2
     }
   }
 })

@@ -30,6 +30,18 @@ span {
     text-align: center;
   }
 }
+
+.heading-six {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $colorPrimary;
+  letter-spacing: 0.3px;
+  @include DeviceMaximum768 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+  }
+}
 .toolkit-heads{
   font-size: 20px;
     font-weight: 700;
