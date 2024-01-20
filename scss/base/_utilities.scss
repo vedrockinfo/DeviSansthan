@@ -78,6 +78,14 @@
     margin-bottom: 2rem;
   }
 }
+
+.space-three {
+  margin-bottom: 3rem;
+  @include DeviceMaximum576 {
+    margin-bottom: 2rem;
+  }
+}
+
 .borderOne{
   width: 10rem;
   height: 3px;

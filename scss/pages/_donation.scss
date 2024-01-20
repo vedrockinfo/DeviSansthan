@@ -2,7 +2,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  min-height: calc(100vh - 276px);
+  
   position: relative;
   @include DeviceMaximum992 {
     min-height: auto;
@@ -48,7 +48,8 @@
     background: #fff;
     border-radius: 10px;
     padding: 25px;
-    margin-top: 10rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     @include DeviceMaximum992 {
       margin-top: 5rem;
       margin-bottom: 5rem;
