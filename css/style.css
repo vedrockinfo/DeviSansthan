@@ -950,7 +950,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  min-height: calc(100vh - 276px);
   position: relative; }
   @media (max-width: 992px) {
     .pageBanner {
@@ -992,7 +991,8 @@ header {
     background: #fff;
     border-radius: 10px;
     padding: 25px;
-    margin-top: 10rem; }
+    margin-top: 6rem;
+    margin-bottom: 6rem; }
     @media (max-width: 992px) {
       .pageBanner .donation-form {
         margin-top: 5rem;
@@ -1051,10 +1051,13 @@ header {
     background-color: rgba(81, 184, 84, 0.12);
     border: none; }
   .pageBanner .nav-tabs .nav-item.show .nav-link,
-  .pageBanner .nav-tabs .nav-link.active {
-    color: #ffffff;
-    background-image: linear-gradient(40deg, #11823b, #51b854);
-    border: none; }
+  .pageBanner .nav-tabs .nav-link {
+    background: rgba(242, 242, 242, 0.5); }
+    .pageBanner .nav-tabs .nav-item.show .nav-link.active,
+    .pageBanner .nav-tabs .nav-link.active {
+      color: #ffffff;
+      background-image: linear-gradient(40deg, #11823b, #51b854);
+      border: none; }
 
 .donation-cards {
   padding: 7rem 0; }
@@ -2128,7 +2131,8 @@ img.flag {
       margin: 15px auto 0; } }
 
 .mission-vision .last {
-  border-left: 1px solid #333333; }
+  border-left: 1px solid #333333;
+  padding-left: 40px; }
 
 .registration-form {
   padding: 10rem 0; }
