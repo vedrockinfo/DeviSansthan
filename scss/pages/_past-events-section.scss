@@ -1,0 +1,105 @@
+.past-events-section {
+    .row{
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        margin-top: 0px;
+        padding: 30px 30px 30px 30px;
+        position: relative;
+        background-color: $colorWhite;
+        border: 3px solid rgba($colorTertiary , 0.07);
+        @include DeviceMaximum576{
+            padding: 20px;
+        }
+        &:not(:last-child){
+        margin-bottom: 40px;
+        }
+        &:nth-child(even){
+            @include DeviceMinimum768{
+            flex-direction: row-reverse;
+        }
+        }
+        &:hover{
+            border-color: rgba(255,195,0, 0.30);
+            box-shadow: inset 0px 0px 15px rgba(255,195,0, 0.30);
+        }
+    }
+    .past-img {
+
+        img {
+            height: auto;
+            max-width: 100%;
+            border: 5px solid $colorWhite;
+            position: relative;
+            overflow: hidden;
+            padding: 5px 5px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+            aspect-ratio: 1 / 1;
+            border-radius: 50% 50% 0% 50%;
+        }
+    }
+
+    .past-content {
+        @include DeviceMaximum768{
+            margin-top: 30px;
+        }
+        .eevent-dated {
+            padding: 0px 20px 0px 20px;
+            margin: 0;
+            background: $colorPrimary;
+            color: $colorWhite;
+            text-transform: uppercase;
+        }
+
+        .eevents-named {
+            font-size: 20px;
+            font-weight: 700;
+            color: $colorPrimary;
+            padding: 15px 0px 15px 0px;
+        }
+
+        .eevents-grid {
+            display: flex;
+            gap: 15px;
+            margin-top: 3rem;
+            @include DeviceMaximum576{
+                flex-direction: column;
+            }
+
+            a.btn {
+                border-radius: 30px;
+                transition: $transition04s;
+                min-width: 200px;
+                text-transform: uppercase;
+                height: 40px;
+                display: grid;
+                place-content: center;
+                font-weight: 600;
+
+                &:nth-child(1){
+                    background: transparent;
+                    color: #ffbf46;
+                    border: 1px solid #ffbf46;
+                    &:hover{
+                        color: $colorWhite;
+                        background: #ffbf46;
+                    }
+                }
+
+                &:nth-child(2){
+                    background-image: $colorPrimary;
+                    color: $colorPrimary;
+                    border: 1px solid $colorPrimary;
+                    &:hover{
+                        color: $colorWhite;
+                        background: $gradientOne;
+                    }
+                }
+
+                @include DeviceMaximum768 {
+                    height: 40px;
+                    margin: auto;
+                }
+            }
+
+        }
+    }
+}

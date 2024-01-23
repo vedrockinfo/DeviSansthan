@@ -6,6 +6,8 @@ p,
 li,
 span {
   font-size: 1.5rem !important;
+  letter-spacing: 0.3px;
+  line-height: 1.857138;
   @include DeviceMaximum768 {
     font-size: 1.3rem !important;
   }

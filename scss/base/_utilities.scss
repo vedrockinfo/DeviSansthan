@@ -157,3 +157,27 @@
 }
   }
   }
+
+  .primary-listing{
+    padding: 0;
+    margin: 0;
+    li{
+      position: relative;
+      list-style: none;
+      &:not(:last-child){
+        margin-bottom: 7.4px;
+      }
+      &::before{
+        content: "";
+    background: #ffbf46;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: -25px;
+    border-radius: 50%;
+    outline: 1px solid #ffbf46;
+    border: 2px solid #ffffff;
+      }
+    }
+  }

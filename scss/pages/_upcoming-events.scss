@@ -1,0 +1,117 @@
+.upcoming-events-page {
+    .upcoming-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 30px;
+        @include DeviceMaximum768{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .eventsection {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 10px;
+
+        .eventsectionimg {
+            position: relative;
+            height: 30rem;
+            @include DeviceMaximum576{
+                height: 15rem;
+            }
+
+            .eventonline {
+                position: absolute;
+                top: 8px;
+                right: 10px;
+
+                span {
+                    color: $colorWhite;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    border: 2px solid $colorPrimary;
+                    padding: 3px 20px;
+                    border-radius: 20px;
+                    color: $colorWhite;
+                    background: $colorPrimary;
+                }
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        .eventsection-contents {
+            background: #f2f2f2;
+            padding: 24px 24px 30px 24px;
+            border-radius: 0 0 10px 10px;
+            min-height: 260px;
+            @include DeviceMaximum768{
+                height: auto;
+                padding: 16px;
+            }
+
+            h6 {
+                margin-bottom: 8px;
+                font-weight: 600;
+                font-size: 12px;
+                color: $colorPrimary;
+                line-height: 1.0625rem;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: $colorTertiary;
+                margin-bottom: 12px;
+                margin-top: 12px;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 15px;
+
+                a {
+                    display: block;
+                    width: max-content;
+                    margin-top: 8px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: $colorPrimary;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background: lighten($colorPrimary, $amount: 10);
+                        height: 1px;
+                        width: 30px;
+                        top: 50%;
+                        right: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all 0.5s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            right: -31px;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
