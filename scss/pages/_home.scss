@@ -156,38 +156,6 @@
         }
       }
     }
-    .rolling-basis{
-      margin-bottom: 1.5rem;
-      color: $colorWhite;
-      font-weight: 400;
-      position: relative;
-      z-index: 1;
-      padding: 8px 20px;
-      font-size: 14px;
-      text-transform: uppercase;
-      &::before{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: $colorPrimary;
-        z-index: -1;
-        transform: skewX(25deg) rotate(-2deg);
-      }
-      &::after{
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: #ffbf46;
-        z-index: -2;
-        transform: skewX(25deg) rotate(5deg);
-      }
-    }
     .online{
       font-size: 14px;
       border: 1px solid $colorPrimary;
