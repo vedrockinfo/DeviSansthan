@@ -179,6 +179,50 @@ $('.videos').owlCarousel({
   }
 })
 
+$('.adult-slides').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: false,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: false,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 1
+    }
+  }
+})
+
+$('.community-slides').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: false,
+  dots: true,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: false,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 3
+    }
+  }
+})
+
 
 function scrollToCarousel(index) {
   owl.trigger("to.owl.carousel", index);

@@ -24,7 +24,7 @@
   border: 1px solid $colorPrimary;
   border-radius: 30px;
   transition: $transition04s;
-  width: 200px;
+  max-width: 250px;
   text-transform: uppercase;
   height: 40px;
   display: grid;
@@ -159,7 +159,6 @@
   }
 
   .primary-listing{
-    padding: 0;
     margin: 0;
     li{
       position: relative;
@@ -179,5 +178,13 @@
     outline: 1px solid #ffbf46;
     border: 2px solid #ffffff;
       }
+    }
+  }
+  .internal-link{
+    color: $colorPrimary;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+      color: $colorSecondary;
     }
   }

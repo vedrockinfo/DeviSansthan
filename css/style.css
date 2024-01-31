@@ -172,7 +172,7 @@ span {
   border: 1px solid #11823b;
   border-radius: 30px;
   transition: all 0.4s;
-  width: 200px;
+  max-width: 250px;
   text-transform: uppercase;
   height: 40px;
   display: grid;
@@ -285,7 +285,6 @@ span {
       font-size: 20px; }
 
 .primary-listing {
-  padding: 0;
   margin: 0; }
   .primary-listing li {
     position: relative;
@@ -303,6 +302,13 @@ span {
       border-radius: 50%;
       outline: 1px solid #ffbf46;
       border: 2px solid #ffffff; }
+
+.internal-link {
+  color: #11823b;
+  text-decoration: underline; }
+  .internal-link:hover {
+    text-decoration: none;
+    color: #51b854; }
 
 button.submit-btn {
   background-image: linear-gradient(40deg, #11823b, #51b854);
@@ -2601,6 +2607,17 @@ img.flag {
     .international-project .video-modal-area:hover .video-modael-content::after {
       width: 100%; }
 
+.international-project .modal-dialog {
+  max-width: calc(100% - 10%); }
+  .international-project .modal-dialog .modal-content {
+    height: 90vh;
+    background: none; }
+    .international-project .modal-dialog .modal-content button.btn-close {
+      position: absolute;
+      right: 0;
+      color: #fff !important;
+      opacity: 1; }
+
 .guyana-area {
   background: #ebfff4;
   margin-top: 7rem; }
@@ -2636,6 +2653,239 @@ img.flag {
           margin: auto; } }
   .guyana-area .content-para p {
     margin: 3rem 0; }
+
+@media (min-width: 992px) {
+  .top-dtalks .sambhalpur {
+    display: flex;
+    gap: 40px;
+    padding: 60px 0 0 0;
+    flex-wrap: wrap; }
+    .top-dtalks .sambhalpur .samimg {
+      flex: 0 0 calc(33.33% - 40px);
+      max-width: calc(33.33% - 40px); }
+    .top-dtalks .sambhalpur .samcontent {
+      flex: 0 0 66.66%;
+      max-width: 66.66%;
+      margin-top: 50px;
+      position: relative;
+      bottom: 50px; }
+      .top-dtalks .sambhalpur .samcontent .link-one {
+        position: absolute;
+        bottom: 0;
+        left: 0; } }
+
+@media (max-width: 992px) {
+  .top-dtalks .sambhalpur {
+    display: block;
+    text-align: center;
+    padding: 30px 0; }
+    .top-dtalks .sambhalpur .samimg {
+      margin-bottom: 30px; }
+    .top-dtalks .sambhalpur .link-one {
+      margin-top: 30px; }
+    .top-dtalks .sambhalpur ul {
+      text-align: left; } }
+
+.each-one {
+  background: #f5f5f5;
+  margin-top: 7rem; }
+  .each-one h2 {
+    padding-bottom: 4rem; }
+  @media (max-width: 768px) {
+    .each-one {
+      margin-top: 4rem; } }
+  @media (min-width: 992px) {
+    .each-one .row:nth-child(even) {
+      flex-direction: row-reverse;
+      margin: 6rem 0; }
+    .each-one .content-para p {
+      padding: 2rem 0; } }
+  @media (max-width: 992px) {
+    .each-one .each-img,
+    .each-one .content-para {
+      text-align: center; }
+    .each-one .link-one a {
+      margin: 0 auto 30px; }
+    .each-one .content-para {
+      margin: 3rem 0; } }
+  .each-one .each-img {
+    position: relative;
+    text-align: center; }
+    .each-one .each-img img {
+      position: relative;
+      z-index: 1; }
+    .each-one .each-img::before {
+      content: "";
+      background-image: url(../img/icons/sharp-bg.png);
+      position: absolute;
+      top: -40px;
+      left: 20px;
+      width: 200px;
+      height: 200px;
+      z-index: 0;
+      transform: scale(0.9);
+      mix-blend-mode: multiply; }
+      @media (max-width: 768px) {
+        .each-one .each-img::before {
+          content: none; } }
+    .each-one .each-img::after {
+      content: "";
+      background-image: url(../img/icons/sharp-bg.png);
+      position: absolute;
+      right: 20px;
+      bottom: -49px;
+      width: 200px;
+      height: 200px;
+      z-index: 0;
+      transform: scale(0.9);
+      mix-blend-mode: multiply; }
+      @media (max-width: 768px) {
+        .each-one .each-img::after {
+          content: none; } }
+
+@media (max-width: 992px) {
+  .adult-literacy .adult-slides .owl-nav {
+    margin-top: 0; } }
+
+.adult-literacy .adult-slides .adult-content p {
+  padding: 1.5rem 0; }
+
+.adult-literacy .adult-slides .adult-content .link-one a {
+  max-width: fit-content;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+@media (max-width: 992px) {
+  .adult-literacy .adult-slides .adult-content {
+    text-align: center; } }
+
+.adult-literacy .adult-slides .adult-pics {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+  max-height: 450px;
+  max-width: 500px; }
+  @media (max-width: 992px) {
+    .adult-literacy .adult-slides .adult-pics {
+      margin-bottom: 3rem;
+      max-width: 250px;
+      max-height: 250px; } }
+  .adult-literacy .adult-slides .adult-pics::before {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff4340; }
+  .adult-literacy .adult-slides .adult-pics::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    content: "";
+    position: absolute;
+    border-radius: 65% 35% 70% 30%/64% 31% 69% 36%;
+    background-color: #ffbf46; }
+  .adult-literacy .adult-slides .adult-pics img {
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    display: inline-block;
+    width: 100%;
+    max-height: inherit;
+    object-position: top;
+    object-fit: cover; }
+
+.ngos-section {
+  position: relative; }
+  .ngos-section::before {
+    content: "";
+    background-image: url(../img/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .ngos-section .container {
+    position: relative; }
+
+.ngos-section .teach-india {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 30px;
+  padding: 30px;
+  background: #ffffff; }
+  @media (max-width: 768px) {
+    .ngos-section .teach-india {
+      display: block;
+      padding: 1.5rem; } }
+  .ngos-section .teach-india:nth-child(even) .teachimg {
+    text-align: center; }
+    .ngos-section .teach-india:nth-child(even) .teachimg::before {
+      top: 10px;
+      left: -10px; }
+  .ngos-section .teach-india:nth-child(even) .teach-india-grid:nth-child(2) {
+    padding-left: 30px; }
+  .ngos-section .teach-india:nth-child(odd) {
+    flex-direction: row-reverse; }
+    .ngos-section .teach-india:nth-child(odd) .teach-india-grid:nth-child(2) {
+      padding-right: 30px; }
+    .ngos-section .teach-india:nth-child(odd) .teachimg {
+      text-align: center; }
+      .ngos-section .teach-india:nth-child(odd) .teachimg::before {
+        top: 10px;
+        left: 10px; }
+
+.ngos-section .teach-india-grid .heading-six {
+  margin-bottom: 20px; }
+
+@media (min-width: 768px) {
+  .ngos-section .teach-india-grid:first-child {
+    flex: 0 0 30%;
+    max-width: 30%; } }
+
+@media (min-width: 768px) {
+  .ngos-section .teach-india-grid:last-child {
+    flex: 0 0 70%;
+    max-width: 70%; } }
+
+.ngos-section .teach-india-grid .teachimg {
+  position: relative; }
+  @media (max-width: 768px) {
+    .ngos-section .teach-india-grid .teachimg {
+      width: 25rem;
+      margin: 0 auto 30px; } }
+  .ngos-section .teach-india-grid .teachimg::before {
+    content: "";
+    background: #ffbf46;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .ngos-section .teach-india-grid .teachimg img {
+    border-radius: 50%;
+    position: relative; }
+
+.community-development .community-card .community-content {
+  padding: 3rem 1.5rem; }
+  .community-development .community-card .community-content h4 {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .community-development .community-card .community-content .link-one {
+    margin-top: 2rem; }
+  .community-development .community-card .community-content a {
+    margin: auto; }
 
 .past-events-section .row {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
