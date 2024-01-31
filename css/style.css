@@ -73,7 +73,7 @@ span {
       text-align: center; } }
 
 .heading-six {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #11823b;
   letter-spacing: 0.3px; }
@@ -147,6 +147,12 @@ span {
   color: #11823b;
   font-weight: 500;
   font-size: inherit; }
+
+.heading-five {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #11823b;
+  text-align: center; }
 
 .mt-large {
   padding-top: 7rem; }
@@ -3139,6 +3145,148 @@ img.flag {
       background-color: #ff4340; }
     .registration-form .outro .outro p {
       font-size: 0.8rem; }
+
+.our-volunteers .premium-person-info-container {
+  background: #f7f7f7;
+  padding: 30px 15px; }
+  @media screen and (min-width: 1400px) {
+    .our-volunteers .premium-person-info-container {
+      min-height: 370px; } }
+  @media screen and (min-width: 1200.5px) and (max-width: 1399.9px) {
+    .our-volunteers .premium-person-info-container {
+      min-height: 400px; } }
+  @media screen and (min-width: 991.5px) and (max-width: 1199.9px) {
+    .our-volunteers .premium-person-info-container {
+      min-height: 450px; } }
+  .our-volunteers .premium-person-info-container .heading-six {
+    text-align: center; }
+  .our-volunteers .premium-person-info-container .heading-five {
+    margin: 1.5rem 0; }
+  .our-volunteers .premium-person-info-container .age-of-learners {
+    display: none; }
+
+.our-learners {
+  background: #ebfff4;
+  position: relative; }
+  .our-learners button.owl-prev,
+  .our-learners button.owl-next {
+    background: #ffffff !important; }
+    .our-learners button.owl-prev i,
+    .our-learners button.owl-next i {
+      color: #11823b; }
+  @media (min-width: 992px) {
+    .our-learners button.owl-prev {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .our-learners button.owl-next {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); } }
+  .our-learners::before {
+    background-image: url(../img/curve-02.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 295px;
+    height: 177px;
+    transform: rotate(180deg); }
+  .our-learners::after {
+    background-image: url(../img/curve-02.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 295px;
+    height: 177px; }
+  .our-learners .sp-testimonial-free {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px; }
+    @media (min-width: 992px) {
+      .our-learners .sp-testimonial-free {
+        width: calc(100% - 10rem);
+        margin: auto; } }
+    .our-learners .sp-testimonial-free .sp-testimonial-client-image {
+      margin: 0 auto 22px;
+      position: relative;
+      max-width: 280px;
+      max-height: 280px; }
+      .our-learners .sp-testimonial-free .sp-testimonial-client-image img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        display: inline-block !important;
+        max-height: inherit;
+        z-index: 3;
+        position: relative;
+        object-position: top;
+        object-fit: cover; }
+      .our-learners .sp-testimonial-free .sp-testimonial-client-image::before {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background-color: #ff2c9c;
+        width: 100%;
+        height: 100%; }
+      .our-learners .sp-testimonial-free .sp-testimonial-client-image:after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        content: "";
+        position: absolute;
+        border-radius: 65% 35% 70% 30%/64% 31% 69% 36%;
+        background-color: #ffac00;
+        width: 100%;
+        height: 100%; }
+    .our-learners .sp-testimonial-free .sp-testimonial-content {
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: none;
+      text-align: center;
+      letter-spacing: normal;
+      font-weight: 400;
+      font-style: normal;
+      margin: 0 0 20px 0; }
+    .our-learners .sp-testimonial-free .sp-testimonial-client-name {
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: none;
+      text-align: center;
+      letter-spacing: normal;
+      font-weight: 700;
+      font-style: normal;
+      margin: 0 0 8px 0;
+      padding: 0;
+      color: #11823b; }
+    .our-learners .sp-testimonial-free .sp-testimonial-client-rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+      gap: 3px; }
+      .our-learners .sp-testimonial-free .sp-testimonial-client-rating i {
+        font-size: 19px;
+        color: #ffb900; }
 
 .toolkits__grid {
   display: grid;

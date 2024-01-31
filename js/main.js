@@ -207,7 +207,7 @@ $('.community-slides').owlCarousel({
   nav: false,
   dots: true,
   navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 7000,
   smartSpeed: 800,
   responsive: {
@@ -219,6 +219,50 @@ $('.community-slides').owlCarousel({
     },
     992: {
       items: 3
+    }
+  }
+})
+
+$('.volunteers-slide').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: true,
+  dots: false,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: true,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 3
+    }
+  }
+})
+
+$('.learners-slide').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: true,
+  dots: true,
+  navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+  autoplay: false,
+  autoplayTimeout: 7000,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 1
     }
   }
 })

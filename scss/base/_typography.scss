@@ -34,7 +34,7 @@ span {
 }
 
 .heading-six {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
   color: $colorPrimary;
   letter-spacing: 0.3px;
@@ -115,3 +115,10 @@ span {
       font-weight: 500;
       font-size: inherit;
     }
+
+    .heading-five {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $colorPrimary;
+    text-align: center;
+}
