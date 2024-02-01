@@ -2729,6 +2729,32 @@ img.flag {
   opacity: .6;
   font-size: 1.25rem; }
 
+.global-partners .partner-link {
+  position: relative; }
+  .global-partners .partner-link a {
+    display: block; }
+  .global-partners .partner-link .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s; }
+    .global-partners .partner-link .overlay i {
+      color: #333333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4rem;
+      width: 4rem;
+      background: #ffffff;
+      border-radius: 50%; }
+  .global-partners .partner-link:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1); }
+
 .international-project .video-modal-area {
   transition: all 0.5s; }
   .international-project .video-modal-area .modal-thumnail {

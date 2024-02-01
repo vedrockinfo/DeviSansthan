@@ -1,0 +1,38 @@
+.global-partners {
+    .partner-link {
+        position: relative;
+
+        a {
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+
+            i {
+                color: $colorTertiary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 4rem;
+                width: 4rem;
+                background: $colorWhite;
+                border-radius: 50%;
+            }
+        }
+
+        &:hover{
+            .overlay{
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+    }
+}
