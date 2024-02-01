@@ -2731,6 +2731,10 @@ img.flag {
 
 .global-partners .partner-link {
   position: relative; }
+  @media screen and (min-width: 290px) and (max-width: 768px) {
+    .global-partners .partner-link {
+      max-width: 25rem;
+      margin: auto; } }
   .global-partners .partner-link a {
     display: block; }
   .global-partners .partner-link .overlay {

@@ -1,6 +1,10 @@
 .global-partners {
     .partner-link {
         position: relative;
+        @media screen and (min-width:290px) and (max-width:768px) {
+            max-width: 25rem;
+             margin: auto;
+        }
 
         a {
             display: block;
