@@ -346,6 +346,23 @@ button.submit-btn {
     border: 1px solid #11823b;
     color: #11823b; }
 
+.view-profile {
+  text-align: center; }
+  .view-profile a {
+    text-transform: uppercase;
+    background: transparent;
+    color: #11823b;
+    border-color: #11823b;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px 50px 50px 50px;
+    padding: 10px 30px;
+    font-weight: 500;
+    transition: all 0.5s; }
+    .view-profile a:hover {
+      border-color: #096841;
+      color: #096841; }
+
 .experience-section {
   margin-top: 7rem; }
   .experience-section .card .card-image {
@@ -1201,6 +1218,73 @@ header {
     .alfa-climate .wantmore-grid__item a {
       margin: 2rem auto 0; }
 
+@media (min-width: 992px) {
+  .annual-reports .container .row:nth-child(even) {
+    flex-direction: row-reverse; } }
+
+.annual-reports .annual-year {
+  color: #ffbf46;
+  font-family: "Poppins", Sans-serif;
+  font-size: 121px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 83px; }
+  @media screen and (max-width: 1200px) {
+    .annual-reports .annual-year {
+      font-size: 7rem; } }
+  @media screen and (max-width: 576px) {
+    .annual-reports .annual-year {
+      font-size: 4rem;
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 0; } }
+
+@media (max-width: 992px) {
+  .annual-reports .toolkit-heads {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; } }
+
+@media (min-width: 992px) {
+  .annual-reports .content-para {
+    padding-bottom: 4.5rem;
+    padding-top: 1rem; } }
+
+.annual-reports .report-wrapper {
+  height: 45rem;
+  position: relative; }
+  @media (min-width: 992px) {
+    .annual-reports .report-wrapper {
+      margin-right: 2rem; } }
+  .annual-reports .report-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    display: grid; }
+    .annual-reports .report-wrapper .overlay img {
+      filter: brightness(3) sepia(5) invert(30);
+      width: 3rem;
+      height: auto;
+      margin: auto; }
+  .annual-reports .report-wrapper:hover .overlay {
+    opacity: 1;
+    visibility: visible; }
+  .annual-reports .report-wrapper:hover img {
+    object-position: bottom; }
+  .annual-reports .report-wrapper img {
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: 4s; }
+
 .pageBanner {
   background-size: cover;
   background-repeat: no-repeat;
@@ -1812,6 +1896,107 @@ img.flag {
   position: absolute;
   top: 8px;
   left: 0; }
+
+.globaladvisory-committee .globaladvisory-person {
+  border-radius: 0 0 25px 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  transition: all 0.5s;
+  margin-bottom: 3rem;
+  width: calc(100% - 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  @media screen and (min-width: 1400px) {
+    .globaladvisory-committee .globaladvisory-person {
+      min-height: 690px; } }
+  @media screen and (min-width: 1200px) and (max-width: 1399.9px) {
+    .globaladvisory-committee .globaladvisory-person {
+      min-height: 681px; } }
+  @media screen and (min-width: 992px) and (max-width: 1199.9px) {
+    .globaladvisory-committee .globaladvisory-person {
+      min-height: 753px; } }
+  @media screen and (min-width: 768px) and (max-width: 991.9px) {
+    .globaladvisory-committee .globaladvisory-person {
+      min-height: 698px; } }
+  .globaladvisory-committee .globaladvisory-person:hover {
+    transform: translateY(-7.5px); }
+    .globaladvisory-committee .globaladvisory-person:hover img {
+      transform: scale(0.75) !important; }
+  .globaladvisory-committee .globaladvisory-person .globaladvisory-image {
+    border-radius: 25px 25px 0 25px;
+    text-align: center;
+    background-image: radial-gradient(#11823b, #096841);
+    position: relative; }
+    .globaladvisory-committee .globaladvisory-person .globaladvisory-image::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -35.8px;
+      height: 36px;
+      width: 36px;
+      background-image: url(../img/icons/curved-01.png);
+      background-position: 100% -4px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.4s; }
+    .globaladvisory-committee .globaladvisory-person .globaladvisory-image:hover .globaladvisory-social {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+      visibility: visible; }
+    .globaladvisory-committee .globaladvisory-person .globaladvisory-image:hover img {
+      filter: brightness(100%) contrast(100%) saturate(100%) blur(0) hue-rotate(88deg); }
+    .globaladvisory-committee .globaladvisory-person .globaladvisory-image img {
+      filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+      aspect-ratio: 1 / 1;
+      object-position: top;
+      transform: scale(0.7);
+      border-radius: 50%;
+      width: 60%;
+      margin: auto;
+      outline: 4px solid #ffffff;
+      transition: all 0.5s;
+      object-fit: cover; }
+    .globaladvisory-committee .globaladvisory-person .globaladvisory-image .globaladvisory-social {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s; }
+      .globaladvisory-committee .globaladvisory-person .globaladvisory-image .globaladvisory-social ul {
+        padding: 0;
+        margin: 0; }
+        .globaladvisory-committee .globaladvisory-person .globaladvisory-image .globaladvisory-social ul li {
+          list-style: none; }
+          .globaladvisory-committee .globaladvisory-person .globaladvisory-image .globaladvisory-social ul li a {
+            color: #333333;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 4rem;
+            border-radius: 50%;
+            width: 4rem; }
+  .globaladvisory-committee .globaladvisory-person .globaladvisory-person-info .globaladvisory-info-container {
+    padding: 30px 15px; }
+  .globaladvisory-committee .globaladvisory-person .globaladvisory-person-info h5 {
+    border-top: 1px solid #096841;
+    color: #096841;
+    border-bottom: 1px solid #096841;
+    padding: 5px 0;
+    font-size: 12.4px;
+    text-align: center;
+    margin: 1.3rem 0 2rem;
+    font-weight: 500;
+    font-style: italic; }
+  .globaladvisory-committee .globaladvisory-person .globaladvisory-person-info .view-profile {
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content; }
 
 @media screen and (min-width: 1200px) {
   .hero-section .hero-carousel-grid {
@@ -2728,6 +2913,69 @@ img.flag {
   background: transparent;
   opacity: .6;
   font-size: 1.25rem; }
+
+.founder-area .sunitag img {
+  width: 260px;
+  border: 5px solid #11823b;
+  border-radius: 50%; }
+
+@media (max-width: 992px) {
+  .founder-area .myu-img {
+    text-align: center;
+    margin-bottom: 3rem; } }
+
+@media (min-width: 992px) {
+  .founder-area .sunitag {
+    display: flex;
+    align-items: center; }
+    .founder-area .sunitag .myu-img {
+      float: left;
+      width: 290px; }
+    .founder-area .sunitag .myu-cont {
+      float: right;
+      width: calc(100% - 290px); } }
+
+.management-team .team-card .team-pic {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #11823b;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto 3rem;
+  position: relative; }
+  @media screen and (max-width: 1199.9px) {
+    .management-team .team-card .team-pic {
+      width: 20rem;
+      height: 20rem; } }
+  .management-team .team-card .team-pic::before {
+    content: "";
+    background-image: radial-gradient(transparent, #06b24357);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 1; }
+  .management-team .team-card .team-pic:hover::before {
+    opacity: 1;
+    visibility: visible; }
+  .management-team .team-card .team-pic:hover img {
+    transform: scale(1.2); }
+  .management-team .team-card .team-pic img {
+    transition: all 0.5s;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%; }
+
+.management-team .team-card .team-data {
+  text-align: center; }
+  .management-team .team-card .team-data h4 {
+    margin-bottom: 1.5rem; }
+  .management-team .team-card .team-data p {
+    color: #11823b; }
 
 .global-partners .partner-link {
   position: relative; }

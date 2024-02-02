@@ -23,3 +23,22 @@ button.submit-btn {
     color: $colorPrimary;
   }
 }
+.view-profile{
+  text-align: center;
+  a{
+    text-transform: uppercase;
+    background: transparent;
+    color: $colorPrimary;
+    border-color: $colorPrimary;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px 50px 50px 50px;
+    padding: 10px 30px;
+    font-weight: 500;
+    transition: all 0.5s;
+    &:hover{
+      border-color: #096841;
+      color: #096841;
+    }
+  }
+}

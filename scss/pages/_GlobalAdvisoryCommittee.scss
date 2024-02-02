@@ -268,3 +268,128 @@ img.flag {
   top: 8px;
   left: 0;
 }
+
+
+// New Page 
+
+.globaladvisory-committee{
+  .globaladvisory-person{
+    border-radius: 0 0 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: all 0.5s;
+    margin-bottom: 3rem;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    @media screen and (min-width:1400px) {
+      min-height: 690px;
+    }
+    @media screen and (min-width:1200px) and (max-width:1399.9px) {
+      min-height: 681px;
+    }
+    @media screen and (min-width:992px) and (max-width:1199.9px) {
+      min-height: 753px;
+    }
+    @media screen and (min-width:768px) and (max-width:991.9px) {
+      min-height: 698px;
+    }
+    &:hover{
+      transform: translateY(-7.5px);
+      img{
+        transform: scale(0.75)!important;
+      }
+    }
+    .globaladvisory-image{
+      border-radius: 25px 25px 0 25px;
+      text-align: center;
+      background-image: radial-gradient($colorPrimary, #096841);
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -35.8px;
+        height: 36px;
+        width: 36px;
+        background-image: url(../img/icons/curved-01.png);
+        background-position: 100% -4px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.4s;               
+      }
+      &:hover{
+        .globaladvisory-social{
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+          visibility: visible;
+        }
+        img{
+          filter: brightness(100%) contrast(100%) saturate(100%) blur(0) hue-rotate(88deg);
+        }
+      }
+      img{
+        filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+        aspect-ratio: 1 / 1;
+        object-position: top;
+        transform: scale(0.7);
+        border-radius: 50%;
+        width: 60%;
+        margin: auto;
+        outline: 4px solid $colorWhite;
+        transition: all 0.5s;
+        object-fit: cover;
+      }
+      .globaladvisory-social{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        ul{
+          padding: 0;
+          margin: 0;
+          li{
+            list-style: none;
+            a{
+              color: $colorTertiary;
+              background: $colorWhite;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              border-radius: 50%;
+              width: 4rem;
+            }
+          }
+        }
+      }
+    }
+    .globaladvisory-person-info{
+      .globaladvisory-info-container {
+          padding: 30px 15px;
+      }
+      h5{
+        border-top: 1px solid #096841;
+        color: #096841;
+        border-bottom: 1px solid #096841;
+        padding: 5px 0;
+        font-size: 12.4px;
+        text-align: center;
+        margin: 1.3rem 0 2rem;
+        font-weight: 500;
+        font-style: italic;
+      }
+      .view-profile {
+          text-align: center;
+          position: absolute;
+          bottom: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: max-content;
+      }
+    }
+  }
+}
