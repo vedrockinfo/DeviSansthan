@@ -279,9 +279,13 @@
       background-color: rgba($colorSecondary, $alpha: 0.12);
     }
   }
-  .accordion-button:not(.collapsed) {
+  .accordion-button
+  {
+    &:not(.collapsed) {
     color: $colorWhite;
     background-image: $gradientOne;
+  }
+    font-size: 1.4rem;
     &::after {
       filter: sepia(2) brightness(2);
     }

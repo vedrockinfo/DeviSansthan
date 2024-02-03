@@ -1633,10 +1633,12 @@ header {
         font-size: 14px; } }
     .faq button:hover {
       background-color: rgba(81, 184, 84, 0.12); }
-  .faq .accordion-button:not(.collapsed) {
-    color: #ffffff;
-    background-image: linear-gradient(40deg, #11823b, #51b854); }
-    .faq .accordion-button:not(.collapsed)::after {
+  .faq .accordion-button {
+    font-size: 1.4rem; }
+    .faq .accordion-button:not(.collapsed) {
+      color: #ffffff;
+      background-image: linear-gradient(40deg, #11823b, #51b854); }
+    .faq .accordion-button::after {
       filter: sepia(2) brightness(2); }
 
 .d-talks-cta {
