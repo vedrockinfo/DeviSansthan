@@ -31,7 +31,7 @@
   place-content: center;
   font-weight: 600;
   @include DeviceMaximum768 {
-    width: 160px;
+    width: fit-content;
     height: 40px;
     margin: auto;
   }
