@@ -365,21 +365,29 @@ button.submit-btn {
 
 .experience-section {
   margin-top: 7rem; }
+  .experience-section .owl-item.active:not(.center) .col .card {
+    background: #f2f2f2; }
+  .experience-section .col {
+    padding: 10px; }
   .experience-section .card .card-image {
-    overflow: hidden;
-    max-height: 350px; }
+    overflow: hidden; }
     .experience-section .card .card-image img.card-img-top {
-      object-fit: cover; }
+      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      outline: 5px solid #ffffff;
+      margin: 50px auto;
+      border-radius: 50%; }
   .experience-section .flag {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px; }
+    text-align: center;
+    margin-bottom: 20px;
+    color: #11823b; }
   .experience-section .flag img {
     width: 50px !important;
     border-radius: 50%; }
   .experience-section .card-text {
-    text-align: center; }
+    text-align: center;
+    color: #11823b; }
     @media (min-width: 1200px) {
       .experience-section .card-text {
         min-height: 88px; } }
@@ -2121,6 +2129,9 @@ img.flag {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 30px; }
+  @media (min-width: 768px) {
+    .hero-section .hero-carousel-grid .hero-inner-grid .link-one {
+      margin-top: 4rem; } }
   @media screen and (max-width: 600px) {
     .hero-section .hero-carousel-grid .hero-inner-grid {
       grid-template-columns: repeat(1, 1fr);
@@ -2235,7 +2246,7 @@ img.flag {
       text-align: right; } }
 
 .upcoming .card-body .online {
-  font-size: 14px;
+  font-size: 14px !important;
   border: 1px solid #11823b;
   border-radius: 20px;
   padding: 5px 20px;
@@ -2253,7 +2264,8 @@ img.flag {
     background-image: linear-gradient(40deg, #11823b, #51b854);
     transform: translateY(-5px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
-    .call-to-action .card:hover .card-title, .call-to-action .card:hover .card-text {
+    .call-to-action .card:hover .card-title,
+    .call-to-action .card:hover .card-text {
       color: #ffffff; }
     .call-to-action .card:hover a {
       background: #ffffff;
@@ -2377,7 +2389,9 @@ img.flag {
             opacity: 0; }
           .our-projects .projects-card__view:hover .masked {
             opacity: 1; }
-          .our-projects .projects-card__view:hover h4, .our-projects .projects-card__view:hover p, .our-projects .projects-card__view:hover .info {
+          .our-projects .projects-card__view:hover h4,
+          .our-projects .projects-card__view:hover p,
+          .our-projects .projects-card__view:hover .info {
             transform: scale(1);
             opacity: 1; } }
     @media screen and (max-width: 767.9px) {

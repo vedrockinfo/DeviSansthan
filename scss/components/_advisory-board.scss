@@ -1,18 +1,28 @@
 .experience-section {
   margin-top: 7rem;
+  .owl-item.active:not(.center){
+    .col .card{
+      background: #f2f2f2;
+    }
+  }
+  .col {
+    padding: 10px;
+}
   .card .card-image {
     overflow: hidden;
-    max-height: 350px;
     img.card-img-top {
       object-fit: cover;
-      //   height: 200px;
+      width: 200px;
+    height: 200px;
+    outline: 5px solid $colorWhite;
+    margin: 50px auto;
+    border-radius: 50%;
     }
   }
   .flag {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
     margin-bottom: 20px;
+    color: $colorPrimary;
   }
 
   .flag img {
@@ -21,6 +31,7 @@
   }
   .card-text {
     text-align: center;
+    color: $colorPrimary;
     @include DeviceMinimum1200 {
       min-height: 88px;
     }
