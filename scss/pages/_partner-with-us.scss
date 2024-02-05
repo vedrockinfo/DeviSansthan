@@ -1,0 +1,147 @@
+.partner-with-us-form {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url(../../img/bg2.jpg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .partner-grid {
+        display: grid;
+        position: relative;
+        grid-template-columns: 33.3333% 66.6666%;
+        background: $colorWhite;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 3rem;
+
+        &__item {
+            &:nth-child(1) {
+                background-image: url(../img/partner-withi-us-01.jpeg);
+                background-repeat: no-repeat;
+                background-size: inherit;
+                background-position: top center;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: #000;
+                    opacity: 0.5;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .content-para {
+                    height: 100%;
+                    display: grid;
+                    place-content: center;
+                    position: relative;
+
+                    .donors {
+                        margin: 30px 30px 30px 30px;
+                        padding: 40px 40px 40px 40px;
+                        background-color: #FFFFFF2B;
+                        border-radius: 20px 20px 20px 20px;
+                        backdrop-filter: blur(10px);
+
+                        p {
+                            color: $colorWhite;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                padding: 50px 25px 20px;
+            }
+        }
+
+        .partnerwithus {
+            .partner-row {
+                margin-bottom: 1.5rem;
+
+                .partner-col {
+                    @include DeviceMinimum768 {
+                        &:first-child {
+                            float: left;
+                            width: calc(50% - 7.5px);
+                            margin-right: 7.5px;
+                        }
+
+                        &:last-child {
+                            float: right;
+                            width: calc(50% - 7.5px);
+                            margin-left: 7.5px;
+                        }
+                    }
+                }
+
+                label {
+                    font-size: 1.6rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .form-control {
+                    padding: 10px 25px !important;
+                    font-size: 16px;
+                    border-radius: 30px !important;
+                    border-color: transparent !important;
+                    background-color: #ebf3f5 !important;
+                }
+
+                input[type="radio"],
+                input[type="checkbox"] {
+                    &:checked {
+                        accent-color: $colorPrimary;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    height: 150px;
+                }
+            }
+
+            .submit-row {
+                margin-top: 2rem;
+            }
+
+            .intersted-grid,
+            .organisation-grid {
+                display: grid;
+            }
+
+            .organisation-grid {
+                grid-template-columns: repeat(3, 1fr);
+
+                @include DeviceMaximum768 {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+            .org-selection-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                @include DeviceMaximum768 {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+            #otherinterst {
+                display: none;
+            }
+        }
+    }
+}

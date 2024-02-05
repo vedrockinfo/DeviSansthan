@@ -420,12 +420,24 @@ function choosevol() {
 }
 
 
-jQuery(document).ready(function () {
-  jQuery('input[placeholder="Other Amount"]').focus(function () {
-    jQuery(this).parent('.tab-pane').addClass('amount-focused');
-  });
+// jQuery(document).ready(function () {
+//   jQuery('input#no').focus(function () {
+//     jQuery(this).parent('.w-org').addClass('amount-focused');
+//   });
 
-  jQuery('input[placeholder="Other Amount"]').blur(function () {
-    jQuery(this).parent('.tab-pane').removeClass('amount-focused');
-  });
-});
+//   jQuery('input#yes').focus(function () {
+//     jQuery(this).parent('.w-org').removeClass('amount-focused');
+//   });
+// });
+
+function handleRadioSelection(radio) {
+  var parentElement = document.getElementById('partnerwithus');
+
+  if (radio.value === 'no') {
+    // Add the 'highlight' class to the parent element when 'No' is selected
+    parentElement.classList.add('highlight');
+  } else {
+    // Remove the 'highlight' class when 'Yes' is selected
+    parentElement.classList.remove('highlight');
+  }
+}
