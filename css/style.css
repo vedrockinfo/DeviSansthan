@@ -1520,6 +1520,40 @@ header {
   @media (max-width: 768px) {
     .donation-cards {
       padding: 4rem 0; } }
+  .donation-cards .card {
+    transition: all 0.5s; }
+    .donation-cards .card:hover {
+      background: #f7f7f7;
+      transform: translateY(-5px); }
+    .donation-cards .card .c-wrapper {
+      clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 99%, 0 75%); }
+    @media (max-width: 992px) {
+      .donation-cards .card {
+        margin-bottom: 3rem; } }
+    .donation-cards .card .card-body {
+      position: relative; }
+      @media (min-width: 768px) {
+        .donation-cards .card .card-body .link-one {
+          position: absolute;
+          bottom: 3rem;
+          width: max-content;
+          left: 50%;
+          transform: translateX(-50%); } }
+      @media screen and (min-width: 768px) {
+        .donation-cards .card .card-body {
+          height: 30rem; } }
+      @media screen and (min-width: 992px) {
+        .donation-cards .card .card-body {
+          height: 40rem; } }
+      @media screen and (min-width: 1200px) {
+        .donation-cards .card .card-body {
+          height: 34rem; } }
+      @media screen and (min-width: 1400px) {
+        .donation-cards .card .card-body {
+          height: 31rem; } }
+  .donation-cards .card-title {
+    color: #11823b;
+    margin-bottom: 2rem; }
 
 .what-we-do {
   padding: 0 0 7rem 0; }
@@ -1532,8 +1566,29 @@ header {
     .what-we-do .content {
       margin-bottom: 30px; } }
   @media (min-width: 992px) {
-    .what-we-do img {
-      padding-right: 30px; } }
+    .what-we-do .devi-img {
+      padding-right: 5px; } }
+  .what-we-do .devi-img img {
+    border-radius: 1rem; }
+  .what-we-do .dontaion-partner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3rem;
+    gap: 3rem; }
+    @media (max-width: 992px) {
+      .what-we-do .dontaion-partner-grid {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px) {
+      .what-we-do .dontaion-partner-grid {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 576px) {
+      .what-we-do .dontaion-partner-grid {
+        grid-template-columns: repeat(1, 1fr); } }
+    .what-we-do .dontaion-partner-grid__item {
+      text-align: center; }
+    .what-we-do .dontaion-partner-grid img {
+      width: 13rem;
+      margin: auto; }
 
 .donation-raised {
   padding: 7rem 0;

@@ -140,6 +140,47 @@
   @include DeviceMaximum768 {
     padding: 4rem 0;
   }
+  .card {
+    transition: all 0.5s;
+    &:hover{
+      background: #f7f7f7;
+      transform: translateY(-5px);
+    }
+    .c-wrapper {
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 99%, 0 75%);
+}
+    @include DeviceMaximum992{
+      margin-bottom: 3rem;
+    }
+    .card-body{
+      position: relative;
+      @include DeviceMinimum768{
+        .link-one{
+        position: absolute;
+        bottom: 3rem;
+        width: max-content;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      }
+      @media screen and (min-width:768px) {
+        height: 30rem;
+      }
+      @media screen and (min-width:992px) {
+        height: 40rem;
+      }
+    @media screen and (min-width:1200px) {
+      height: 34rem;
+    }
+    @media screen and (min-width:1400px) {
+      height: 31rem;
+    }
+  }
+  }
+  .card-title{
+    color: $colorPrimary;
+    margin-bottom: 2rem;
+  }
 }
 
 .what-we-do {
@@ -156,9 +197,34 @@
       margin-bottom: 30px;
     }
   }
-  img {
+  .devi-img{ 
     @include DeviceMinimum992 {
-      padding-right: 30px;
+      padding-right: 5px;
+    }
+    img {
+    border-radius: 1rem;
+  }
+}
+  .dontaion-partner-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3rem;
+    gap: 3rem;
+    @include  DeviceMaximum992{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include  DeviceMaximum768{
+      grid-template-columns: repeat(2, 1fr);
+    }
+     @include  DeviceMaximum576{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item{
+      text-align: center;
+    }
+    img{
+      width: 13rem;
+      margin: auto;
     }
   }
 }

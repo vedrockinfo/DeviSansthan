@@ -418,3 +418,14 @@ function choosevol() {
   var hiddenDiv = document.getElementById("volunteers");
   hiddenDiv.style.display = "block";
 }
+
+
+jQuery(document).ready(function () {
+  jQuery('input[placeholder="Other Amount"]').focus(function () {
+    jQuery(this).parent('.tab-pane').addClass('amount-focused');
+  });
+
+  jQuery('input[placeholder="Other Amount"]').blur(function () {
+    jQuery(this).parent('.tab-pane').removeClass('amount-focused');
+  });
+});
