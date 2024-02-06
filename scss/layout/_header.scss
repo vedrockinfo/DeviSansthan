@@ -164,7 +164,9 @@ li{
 	display:flex;
 	align-items:center;
   &:first-child{
-	margin-bottom:5px;
+	@include DeviceMinimum992{
+    margin-bottom:5px;
+  }
 }
 }
 a{
@@ -334,7 +336,7 @@ a{
             opacity: 1;
             visibility: visible;
             transform: none;
-            margin-top: 6px;
+            margin-top: 0;
           }
         }
       }

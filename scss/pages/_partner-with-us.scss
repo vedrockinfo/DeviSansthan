@@ -69,23 +69,36 @@
 
         .partnerwithus {
             .partner-row {
-                margin-bottom: 1.5rem;
-
-                .partner-col {
-                    @include DeviceMinimum768 {
-                        &:first-child {
-                            float: left;
-                            width: calc(50% - 7.5px);
-                            margin-right: 7.5px;
-                        }
-
-                        &:last-child {
-                            float: right;
-                            width: calc(50% - 7.5px);
-                            margin-left: 7.5px;
-                        }
+                margin-bottom: 2.5rem;
+                @include DeviceMinimum768{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    .partner-col {
+                        flex: 0 0 calc(50% - 4px);
+                        max-width: calc(50% - 4px);
                     }
+                    .partner-col-full {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
                 }
+
+                // .partner-col {
+                //     @include DeviceMinimum768 {
+                //         &:first-child {
+                //             float: left;
+                //             width: calc(50% - 7.5px);
+                //             margin-right: 7.5px;
+                //         }
+
+                //         &:last-child {
+                //             float: right;
+                //             width: calc(50% - 7.5px);
+                //             margin-left: 7.5px;
+                //         }
+                //     }
+                // }
 
                 label {
                     font-size: 1.6rem;

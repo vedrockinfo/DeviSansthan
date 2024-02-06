@@ -25,7 +25,7 @@
 
         &__item {
             &:nth-child(2) {
-                background-image: url(../img/partner-withi-us-01.jpeg);
+                background-image: url(../img/work-with-us-01.jpeg);
                 background-repeat: no-repeat;
                 background-size: inherit;
                 background-position: top center;
@@ -69,23 +69,49 @@
 
         .partnerwithus {
             .partner-row {
-                margin-bottom: 1.5rem;
-
-                .partner-col {
-                    @include DeviceMinimum768 {
-                        &:first-child {
-                            float: left;
-                            width: calc(50% - 7.5px);
-                            margin-right: 7.5px;
-                        }
-
-                        &:last-child {
-                            float: right;
-                            width: calc(50% - 7.5px);
-                            margin-left: 7.5px;
-                        }
+                margin-bottom: 2.5rem;
+                @include DeviceMinimum768{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    .partner-col {
+                        flex: 0 0 calc(50% - 4px);
+                        max-width: calc(50% - 4px);
                     }
+                    .partner-col-full {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
                 }
+
+                input[type=file] {
+                    font-size: 1.6rem!important;
+//                     & + label {
+//     background-image: $gradientOne;
+//     padding: 1rem 1.5rem;
+//     border-radius: 4rem;
+//     color: $colorWhite;
+//     width: 250px;
+//     text-align: center;
+//     cursor: pointer;
+// }
+                }
+
+                // .partner-col {
+                //     @include DeviceMinimum768 {
+                //         &:first-child {
+                //             float: left;
+                //             width: calc(50% - 7.5px);
+                //             margin-right: 7.5px;
+                //         }
+
+                //         &:last-child {
+                //             float: right;
+                //             width: calc(50% - 7.5px);
+                //             margin-left: 7.5px;
+                //         }
+                //     }
+                // }
 
                 label {
                     font-size: 1.6rem;

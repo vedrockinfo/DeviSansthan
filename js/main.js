@@ -441,3 +441,4 @@ function handleRadioSelection(radio) {
     parentElement.classList.remove('highlight');
   }
 }
+

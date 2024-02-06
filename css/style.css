@@ -917,8 +917,9 @@ header {
       header .topheader .lg-grid__items .top-contact li {
         display: flex;
         align-items: center; }
-        header .topheader .lg-grid__items .top-contact li:first-child {
-          margin-bottom: 5px; }
+        @media (min-width: 992px) {
+          header .topheader .lg-grid__items .top-contact li:first-child {
+            margin-bottom: 5px; } }
       header .topheader .lg-grid__items .top-contact a {
         transition: all 0.4s;
         color: #11823b; }
@@ -1044,7 +1045,7 @@ header {
       opacity: 1;
       visibility: visible;
       transform: none;
-      margin-top: 6px; } }
+      margin-top: 0; } }
 
 @media (min-width: 992px) {
   .literate-sentence .cat-row {
@@ -1302,7 +1303,7 @@ header {
     .contact-area-page .main-contact-now {
       margin-right: 3rem; } }
   .contact-area-page .main-contact-now .form-row {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 2.5rem; }
     .contact-area-page .main-contact-now .form-row label {
       font-size: 1.6rem;
       margin-bottom: 0.5rem; }
@@ -3491,16 +3492,18 @@ img.flag {
     .partner-with-us-form .partner-grid__item:nth-child(2) {
       padding: 50px 25px 20px; }
     .partner-with-us-form .partner-grid .partnerwithus .partner-row {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 2.5rem; }
       @media (min-width: 768px) {
-        .partner-with-us-form .partner-grid .partnerwithus .partner-row .partner-col:first-child {
-          float: left;
-          width: calc(50% - 7.5px);
-          margin-right: 7.5px; }
-        .partner-with-us-form .partner-grid .partnerwithus .partner-row .partner-col:last-child {
-          float: right;
-          width: calc(50% - 7.5px);
-          margin-left: 7.5px; } }
+        .partner-with-us-form .partner-grid .partnerwithus .partner-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px; }
+          .partner-with-us-form .partner-grid .partnerwithus .partner-row .partner-col {
+            flex: 0 0 calc(50% - 4px);
+            max-width: calc(50% - 4px); }
+          .partner-with-us-form .partner-grid .partnerwithus .partner-row .partner-col-full {
+            flex: 0 0 100%;
+            max-width: 100%; } }
       .partner-with-us-form .partner-grid .partnerwithus .partner-row label {
         font-size: 1.6rem;
         margin-bottom: 0.5rem; }
@@ -4511,7 +4514,7 @@ img.flag {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 3rem; }
     .work-with-us-form .partner-grid__item:nth-child(2) {
-      background-image: url(../img/partner-withi-us-01.jpeg);
+      background-image: url(../img/work-with-us-01.jpeg);
       background-repeat: no-repeat;
       background-size: inherit;
       background-position: top center;
@@ -4541,16 +4544,20 @@ img.flag {
     .work-with-us-form .partner-grid__item:nth-child(1) {
       padding: 50px 25px 20px; }
     .work-with-us-form .partner-grid .partnerwithus .partner-row {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 2.5rem; }
       @media (min-width: 768px) {
-        .work-with-us-form .partner-grid .partnerwithus .partner-row .partner-col:first-child {
-          float: left;
-          width: calc(50% - 7.5px);
-          margin-right: 7.5px; }
-        .work-with-us-form .partner-grid .partnerwithus .partner-row .partner-col:last-child {
-          float: right;
-          width: calc(50% - 7.5px);
-          margin-left: 7.5px; } }
+        .work-with-us-form .partner-grid .partnerwithus .partner-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px; }
+          .work-with-us-form .partner-grid .partnerwithus .partner-row .partner-col {
+            flex: 0 0 calc(50% - 4px);
+            max-width: calc(50% - 4px); }
+          .work-with-us-form .partner-grid .partnerwithus .partner-row .partner-col-full {
+            flex: 0 0 100%;
+            max-width: 100%; } }
+      .work-with-us-form .partner-grid .partnerwithus .partner-row input[type=file] {
+        font-size: 1.6rem !important; }
       .work-with-us-form .partner-grid .partnerwithus .partner-row label {
         font-size: 1.6rem; }
       .work-with-us-form .partner-grid .partnerwithus .partner-row .form-control {
