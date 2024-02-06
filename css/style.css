@@ -3443,7 +3443,7 @@ img.flag {
   position: relative; }
   .partner-with-us-form::before {
     content: "";
-    background-image: url(../../img/bg2.jpg);
+    background-image: url(../img/bg2.jpg);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3967,6 +3967,27 @@ img.flag {
         height: 40px;
         margin: auto; } }
 
+.privacu-policy table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.5em;
+  width: 100%;
+  border-color: #333333;
+  border-style: solid; }
+  .privacu-policy table td, .privacu-policy table th {
+    padding: 8px;
+    border-width: 0 1px 1px 0;
+    font-size: 1.5rem; }
+
+.terms-cond table {
+  border-collapse: collapse;
+  margin: 0 0 1.5em;
+  width: 100%; }
+  .terms-cond table td, .terms-cond table th {
+    padding: 8px;
+    font-size: 1.5rem; }
+
 .registration-form {
   padding: 10rem 0; }
   @media (min-width: 768px) {
@@ -4472,7 +4493,7 @@ img.flag {
   position: relative; }
   .work-with-us-form::before {
     content: "";
-    background-image: url(../../img/bg2.jpg);
+    background-image: url(../img/bg2.jpg);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;

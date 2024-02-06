@@ -1,0 +1,27 @@
+.privacu-policy{
+    table{
+        border-collapse: separate;
+        border-spacing: 0;
+        border-width: 1px 0 0 1px;
+        margin: 0 0 1.5em;
+        width: 100%;
+        border-color: $colorTertiary;
+        border-style: solid;
+        td, th {
+        padding: 8px;
+        border-width: 0 1px 1px 0;
+        font-size: 1.5rem;
+    }
+    }
+}
+.terms-cond{
+    table{
+        border-collapse: collapse;
+        margin: 0 0 1.5em;
+        width: 100%;
+        td, th {
+        padding: 8px;
+        font-size: 1.5rem;
+    }
+    }
+}
