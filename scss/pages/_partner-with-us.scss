@@ -18,7 +18,9 @@
     .partner-grid {
         display: grid;
         position: relative;
-        grid-template-columns: 33.3333% 66.6666%;
+        @include DeviceMinimum768{
+            grid-template-columns: 33.3333% 66.6666%;
+        }
         background: $colorWhite;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 3rem;
@@ -69,11 +71,16 @@
 
         .partnerwithus {
             .partner-row {
-                margin-bottom: 2.5rem;
+                @include DeviceMaximum768{
+                    .partner-col, .partner-col-full{
+                        margin-bottom: 1.5rem;
+                    }
+                }
                 @include DeviceMinimum768{
                     display: flex;
                     flex-wrap: wrap;
                     gap: 8px;
+                    margin-bottom: 2.5rem;
                     .partner-col {
                         flex: 0 0 calc(50% - 4px);
                         max-width: calc(50% - 4px);
@@ -134,7 +141,13 @@
             .organisation-grid {
                 display: grid;
             }
-
+            .intersted-grid{
+                &.other-checked{
+                    & + input#otherinterst{
+                        display: block;
+                    }
+                }
+            }
             .organisation-grid {
                 grid-template-columns: repeat(3, 1fr);
 

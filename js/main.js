@@ -442,3 +442,35 @@ function handleRadioSelection(radio) {
   }
 }
 
+jQuery(document).ready(function () {
+  jQuery(".dropdown-toggle").click(function () {
+    jQuery(".dropdown-toggle + ul.dropdown-menu").slideToggle();
+  })
+})
+
+jQuery(".w-org input#no").click(function () {
+  jQuery(".oth-int").hide();
+});
+
+jQuery(".w-org input#yes").click(function () {
+  jQuery(".oth-int").show();
+});
+
+jQuery(document).ready(function () {
+  jQuery('input[value="Other"]').change(function () {
+    if (jQuery(this).is(":checked")) {
+      jQuery(this).closest(".intersted-grid").addClass('other-checked');
+    } else {
+      jQuery(this).closest(".intersted-grid").removeClass('other-checked');
+    }
+  });
+});
+jQuery(document).ready(function () {
+  jQuery('input[value="Other"]').change(function () {
+    if (jQuery(this).is(":checked")) {
+      jQuery(this).closest(".expertise-grid").addClass('other-checked');
+    } else {
+      jQuery(this).closest(".expertise-grid").removeClass('other-checked');
+    }
+  });
+});

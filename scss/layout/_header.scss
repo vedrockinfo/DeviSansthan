@@ -150,8 +150,11 @@ header {
       &:nth-child(2){
         background: $colorPink;
       }
-      i, a{
+       a{
         color: $colorWhite;
+      }
+      i{
+        display: none;
       }
     }
   }
@@ -244,7 +247,9 @@ a{
       transition: $transition04s;
       text-transform: uppercase;
       &:hover {
-        color: $colorWhite !important;
+        @include DeviceMinimum992{
+          color: $colorWhite !important;
+        }
       }
     }
     .navbar-brand {
@@ -343,3 +348,9 @@ a{
     }
   }
 }
+
+// @include DeviceMaximum992{
+//   .dropdown-toggle + ul.dropdown-menu{
+//   display: none;
+// }
+// }
