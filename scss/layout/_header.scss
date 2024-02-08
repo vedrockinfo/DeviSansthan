@@ -150,8 +150,11 @@ header {
       &:nth-child(2){
         background: $colorPink;
       }
-      i, a{
+       a{
         color: $colorWhite;
+      }
+      i{
+        display: none;
       }
     }
   }
@@ -164,7 +167,9 @@ li{
 	display:flex;
 	align-items:center;
   &:first-child{
-	margin-bottom:5px;
+	@include DeviceMinimum992{
+    margin-bottom:5px;
+  }
 }
 }
 a{
@@ -242,7 +247,9 @@ a{
       transition: $transition04s;
       text-transform: uppercase;
       &:hover {
-        color: $colorWhite !important;
+        @include DeviceMinimum992{
+          color: $colorWhite !important;
+        }
       }
     }
     .navbar-brand {
@@ -334,10 +341,16 @@ a{
             opacity: 1;
             visibility: visible;
             transform: none;
-            margin-top: 6px;
+            margin-top: 0;
           }
         }
       }
     }
   }
 }
+
+// @include DeviceMaximum992{
+//   .dropdown-toggle + ul.dropdown-menu{
+//   display: none;
+// }
+// }

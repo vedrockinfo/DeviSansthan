@@ -6,14 +6,17 @@ p,
 li,
 span {
   font-size: 1.5rem !important;
+  letter-spacing: 0.3px;
+  line-height: 1.857138;
   @include DeviceMaximum768 {
     font-size: 1.3rem !important;
   }
 }
 
 .secondary-heading {
-  font-size: 5rem;
+  font-size: 3.6rem;
   font-weight: bold;
+  text-transform: uppercase;
   color: $colorPrimary;
   @include DeviceMaximum768 {
     font-size: 2.5rem;
@@ -28,4 +31,94 @@ span {
     font-size: 1.8rem;
     text-align: center;
   }
+}
+
+.heading-six {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $colorPrimary;
+  letter-spacing: 0.3px;
+  @include DeviceMaximum768 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+.toolkit-heads{
+  font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $colorWhite;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 8px 20px;
+    display: inline-block; 
+    &::before{
+      content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $colorPrimary;
+    z-index: -1;
+    transform: skewX(25deg) rotate(-2deg);
+    }
+    &::after{
+      content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $colorYellow;
+    z-index: -2;
+    transform: skewX(25deg) rotate(5deg);
+    }
+}
+
+.rolling-basis{
+      margin-bottom: 1.5rem;
+      color: $colorWhite;
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+      padding: 8px 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $colorPrimary;
+        z-index: -1;
+        transform: skewX(25deg) rotate(-2deg);
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #ffbf46;
+        z-index: -2;
+        transform: skewX(25deg) rotate(5deg);
+      }
+    }
+    
+    .text-link{
+      color: $colorPrimary;
+      font-weight: 500;
+      font-size: inherit;
+    }
+
+    .heading-five {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $colorPrimary;
+    text-align: center;
 }

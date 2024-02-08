@@ -1,0 +1,251 @@
+.literate-sentence {
+    .cat-row {
+        @include DeviceMinimum992 {
+            display: flex;
+            margin-bottom: 1.6em;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .xleft {
+                flex: 0 0 300px;
+                max-width: 300px;
+            }
+
+            .xright {
+                flex: 0 0 calc(100% - 320px);
+                max-width: calc(100% - 320px);
+            }
+        }
+    }
+
+    h4 {
+        margin-bottom: 2.5rem;
+    }
+
+    ul {
+        margin-bottom: 1rem;
+    }
+
+    .link-one{
+        margin-top: 4rem;
+    }
+}
+
+.alfa-pedagogy {
+    margin-top: 7rem;
+    background-image: url(../img/bg-02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include DeviceMaximum768 {
+        margin-top: 4rem;
+    }
+
+    .pedagogy-box-wrapper {
+        color: $colorWhite;
+        text-align: center;
+        padding: 3rem;
+        background: $colorTertiary;
+        border-radius: 1.5rem;
+        transition: all 0.5s;
+        &:hover{
+            background: lighten($colorTertiary, $amount: 7);
+            transform: translateY(-5px);
+        }
+
+        @media screen and (min-width:992px) {
+            min-height: 39rem;
+        }
+
+        @media screen and (min-width:1200px) {
+            min-height: 36rem;
+        }
+
+        @media screen and (min-width:1400px) {
+            min-height: 33rem;
+        }
+
+        @media screen and (max-width:992px) {
+            margin-bottom: 3rem;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            min-height: 37.6rem;
+        }
+
+        .pedagogy-box-icon {
+            margin-bottom: 1.5rem;
+
+            i {
+                font-size: 5rem;
+            }
+        }
+
+        .pedagogy-box-content {
+            .pedagogy-box-title {
+                margin-bottom: 2rem;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            .pedagogy-box-description {
+                @include DeviceMinimum992 {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
+.literacy-crisis, .literacy-india{
+    .content-para{
+        margin: 2rem 0;
+    }
+    @include DeviceMaximum992{
+        h2{
+            text-align: center;
+        }
+        .link-one{
+            a{
+                margin: 0 auto 3rem;
+            }
+        }
+        .col-lg-4{
+            text-align: center;
+        }
+    }
+}
+.literacy-india{
+    .row{
+        @include DeviceMaximum992{
+            flex-direction: column-reverse;
+        }
+    }
+}
+.intergued{
+    @media screen and (max-width:992px) {
+            .heading-six{
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+    }
+    &__box-wrapper{
+        padding: 20px 30px 20px 30px;
+        border: 1px solid $colorTertiary;
+        border-radius: 1.5rem;
+        text-align: center;
+        transition: all 0.5s;
+        &:hover{
+            transform: translateY(-5px);
+            background: #f5f5f5;
+        }
+
+        @media screen and (min-width:992px) {
+            min-height: 23.5rem;
+        }
+
+        @media screen and (min-width:1200px) {
+            min-height: 20.5rem;
+        }
+
+        @media screen and (min-width:1400px) {
+            min-height: 20.6rem;
+        }
+
+        @media screen and (max-width:768px) {
+            margin-bottom: 3rem;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            min-height: 23.6rem;
+        }
+
+        img{
+            width: 5rem;
+            margin: auto;
+        }
+    }
+    &__box-content{
+        margin-top: 2rem;
+    }
+}
+.alfa-classroom{
+    .financial-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include DeviceMaximum992{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+            text-align: center;
+        }
+         @include DeviceMaximum576{
+            gap: 2rem;
+        }
+        .financial-grid-item{
+            &:nth-child(odd){
+                background: $colorPrimary;
+            }
+            &:nth-child(even){
+                background: $colorSecondary;
+            }
+            .financial-box-wrapper{
+                padding: 40px 20px 40px 20px;
+                @include DeviceMinimum1200{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                }
+                & > a{
+                    flex: 0 0 63px;
+                    max-width: 63px;
+                }
+                .financial-box-content{
+                    .financial-box-title{
+                        font-weight: 700;
+                        font-size: 2rem;
+                    }
+                    .financial-box-description{
+                        color: $colorWhite;
+                    }
+                }
+                a{
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+}
+.alfa-climate{
+    .wantmore-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid $colorTertiary;
+        border-radius: 1rem;
+        margin-top: 4rem;
+        max-width: 853px;
+        margin-left: auto;
+        margin-right: auto;
+        @include DeviceMaximum576{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+        }
+        @include DeviceMaximum768{
+            margin-top: 2rem;
+        }
+        &__item{    
+            padding: 20px;
+            text-align: center;
+            &:nth-child(2){
+                @media screen and (min-width:576.1px) {
+                    border-left: 1px solid $colorTertiary;
+                }
+                @include DeviceMaximum576{
+                    border-top: 1px solid $colorTertiary;
+                }
+            }
+            a{
+                margin: 2rem auto 0;
+            }
+        }
+    }
+}
