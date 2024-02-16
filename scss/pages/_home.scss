@@ -103,6 +103,33 @@
   }
 
   .hero-form {
+    input[type="checkbox"] {
+      margin-right: 5px;
+      top: 2px;
+      position: relative;
+    }
+
+    input+span[style*="visibility"],
+    textarea+span[style*="visibility"] {
+      position: absolute;
+      top: 0;
+      left: 6px;
+    }
+
+    input[type="submit"]+span[style*="Green"] {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      font-weight: 500;
+      border: 2px solid green;
+      margin-top: 20px;
+      border-radius: 20px;
+    }
+
+    .mb-3 {
+      position: relative;
+    }
+
     .link-one {
       a {
         margin: auto;

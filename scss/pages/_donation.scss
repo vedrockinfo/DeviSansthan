@@ -357,3 +357,120 @@
     }
   }
 }
+.child-donation{
+  .child-donation-grid{
+    display: grid;
+    @include DeviceMinimum992{
+      grid-template-columns: 60% 40%;
+    }
+    align-items: center;
+    .child-donation-item{
+      @include DeviceMinimum992{
+        &:nth-child(2){
+          padding-left: 50px;
+          padding-right: 5rem;
+        }
+      }
+      @include DeviceMaximum992{
+        margin-top: 5rem;
+        text-align: center;
+      }
+      .dontaing-img{
+        position: relative;
+        &::before{
+          content: '';
+    position: absolute;
+    background: url(../img/about-banner-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+    top: 0;
+    left: -3px;
+    width: 103%;
+    height: 103%;
+    z-index: 2;
+        }
+        img{
+          width: 100%;
+          @include DeviceMinimum992{
+            height: 500px;
+          }
+          object-fit: cover;
+          object-position: 100% 200%;
+        }
+      }
+      h1{
+        font-size: 27px;
+    color: $colorPrimary;
+    line-height: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+      }
+      h2{
+        font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    color: $colorPrimary;
+      }
+    }
+  }
+}
+
+.donationone-form{
+  background: #f5f6f9;
+  margin-top: 7rem;
+  @include DeviceMaximum768{
+    margin-top: 4rem;
+  }
+  .alfa-input{
+    @include DeviceMinimum768{
+      display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+    }
+    @include DeviceMinimum992{
+      justify-content: space-between;
+    }
+    @include DeviceMaximum768{
+      display: block;
+      .f-input{
+        &:not(:last-child){
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .f-input{
+      @include DeviceMinimum992{
+        width: calc(100% / 7 - 10px);
+      }
+      label{
+        font-size: 15px;
+    color: #2a2b6b;
+    font-weight: 600;
+    margin-bottom: 5px;
+      }
+      button{
+        @include DeviceMinimum992{
+          width: 100%;
+        }
+        @include DeviceMinimum768{
+          margin: 0;
+        }
+      }
+    }
+  }
+  .form-control{
+    border: 1px solid #dcdee0;
+    background: #fff;
+    border-radius: 5px;
+    color: rgba(42,42,42,.6);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px;
+    &:focus{
+      box-shadow: none;
+      border-color: #dcdee0;
+    }
+  }
+}

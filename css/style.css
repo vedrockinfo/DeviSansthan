@@ -363,6 +363,20 @@ button.submit-btn {
       border-color: #096841;
       color: #096841; }
 
+.link-one .btn-2 {
+  background-image: linear-gradient(40deg, #11823b, #51b854);
+  color: #ffffff;
+  border: 1px solid #11823b;
+  border-radius: 30px;
+  transition: all 0.4s;
+  width: 250px;
+  text-transform: uppercase;
+  height: 40px;
+  display: block;
+  margin: auto;
+  font-weight: 600;
+  font-size: 15px; }
+
 .experience-section {
   margin-top: 7rem; }
   .experience-section .owl-item.active:not(.center) .col .card {
@@ -1775,6 +1789,99 @@ header {
     .faq .accordion-button::after {
       filter: sepia(2) brightness(2); }
 
+.child-donation .child-donation-grid {
+  display: grid;
+  align-items: center; }
+  @media (min-width: 992px) {
+    .child-donation .child-donation-grid {
+      grid-template-columns: 60% 40%; } }
+  @media (min-width: 992px) {
+    .child-donation .child-donation-grid .child-donation-item:nth-child(2) {
+      padding-left: 50px;
+      padding-right: 5rem; } }
+  @media (max-width: 992px) {
+    .child-donation .child-donation-grid .child-donation-item {
+      margin-top: 5rem;
+      text-align: center; } }
+  .child-donation .child-donation-grid .child-donation-item .dontaing-img {
+    position: relative; }
+    .child-donation .child-donation-grid .child-donation-item .dontaing-img::before {
+      content: '';
+      position: absolute;
+      background: url(../img/about-banner-bg.png) no-repeat center center;
+      background-size: 100% 100%;
+      top: 0;
+      left: -3px;
+      width: 103%;
+      height: 103%;
+      z-index: 2; }
+    .child-donation .child-donation-grid .child-donation-item .dontaing-img img {
+      width: 100%;
+      object-fit: cover;
+      object-position: 100% 200%; }
+      @media (min-width: 992px) {
+        .child-donation .child-donation-grid .child-donation-item .dontaing-img img {
+          height: 500px; } }
+  .child-donation .child-donation-grid .child-donation-item h1 {
+    font-size: 27px;
+    color: #11823b;
+    line-height: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0; }
+  .child-donation .child-donation-grid .child-donation-item h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    color: #11823b; }
+
+.donationone-form {
+  background: #f5f6f9;
+  margin-top: 7rem; }
+  @media (max-width: 768px) {
+    .donationone-form {
+      margin-top: 4rem; } }
+  @media (min-width: 768px) {
+    .donationone-form .alfa-input {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 10px; } }
+  @media (min-width: 992px) {
+    .donationone-form .alfa-input {
+      justify-content: space-between; } }
+  @media (max-width: 768px) {
+    .donationone-form .alfa-input {
+      display: block; }
+      .donationone-form .alfa-input .f-input:not(:last-child) {
+        margin-bottom: 1rem; } }
+  @media (min-width: 992px) {
+    .donationone-form .alfa-input .f-input {
+      width: calc(100% / 7 - 10px); } }
+  .donationone-form .alfa-input .f-input label {
+    font-size: 15px;
+    color: #2a2b6b;
+    font-weight: 600;
+    margin-bottom: 5px; }
+  @media (min-width: 992px) {
+    .donationone-form .alfa-input .f-input button {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .donationone-form .alfa-input .f-input button {
+      margin: 0; } }
+  .donationone-form .form-control {
+    border: 1px solid #dcdee0;
+    background: #fff;
+    border-radius: 5px;
+    color: rgba(42, 42, 42, 0.6);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px; }
+    .donationone-form .form-control:focus {
+      box-shadow: none;
+      border-color: #dcdee0; }
+
 .d-talks-cta {
   background: #11823b;
   position: relative; }
@@ -2321,6 +2428,29 @@ img.flag {
       border-radius: 50%;
       height: 100%;
       line-height: 1; }
+
+.hero-section .hero-form input[type="checkbox"] {
+  margin-right: 5px;
+  top: 2px;
+  position: relative; }
+
+.hero-section .hero-form input + span[style*="visibility"],
+.hero-section .hero-form textarea + span[style*="visibility"] {
+  position: absolute;
+  top: 0;
+  left: 6px; }
+
+.hero-section .hero-form input[type="submit"] + span[style*="Green"] {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  border: 2px solid green;
+  margin-top: 20px;
+  border-radius: 20px; }
+
+.hero-section .hero-form .mb-3 {
+  position: relative; }
 
 .hero-section .hero-form .link-one a {
   margin: auto; }
