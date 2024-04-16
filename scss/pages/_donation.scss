@@ -418,8 +418,10 @@
 .donationone-form{
   background: #f5f6f9;
   margin-top: 7rem;
+  padding: 7rem 0;
   @include DeviceMaximum768{
     margin-top: 4rem;
+    padding: 4rem 0;
   }
   .alfa-input{
     @include DeviceMinimum768{
@@ -443,6 +445,7 @@
       @include DeviceMinimum992{
         width: calc(100% / 7 - 10px);
       }
+      position: relative;
       label{
         font-size: 15px;
     color: #2a2b6b;
@@ -471,6 +474,141 @@
     &:focus{
       box-shadow: none;
       border-color: #dcdee0;
+    }
+  }
+}
+.donationone-form .form-control ~ span {
+    position: absolute;
+    top: 0px;
+    @include DeviceMinimum768{
+      left: -10px;
+    }
+    @include DeviceMaximum768{
+      right: 20px;
+    }
+}
+
+.generosity-section table {
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+    }
+    
+}
+
+.generosity-section table thead {
+    background: $gradientOne;
+}
+
+.generosity-section table thead th.text-center {
+    color: #fff;
+}
+
+.generosity-section table tbody tr td:first-child {
+    border-right: 1px solid #e0e0e0;
+    background: #e4ffe6;
+}
+
+.generosity.donate{
+  background-image: url(../img/secondary-bg.jpg);
+    position: relative;
+    min-height: 39rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  padding: 7rem 0;
+  &::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container{
+    position: relative;
+  }
+  .secondary-heading{
+    color: $colorWhite;
+  }
+  @include DeviceMaximum768{
+    margin-top: 4rem;
+    padding: 4rem 0;
+  }
+  .generosity-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include DeviceMaximum768{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .generosity-grid-item{
+      background: $colorWhite;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      .card{
+        @include DeviceMaximum1200{
+          text-align: center;
+        }
+        @include DeviceMinimum1400{
+          height: 22rem;
+        }
+        @media screen and (min-width:1200px) and (max-width:1399.9px) {
+             height: 25rem;
+          }
+        display: block;
+        .left-img{
+          height: 100%;
+          @include DeviceMinimum768 {
+            float:left;
+          }
+          @include DeviceMinimum1400{
+            width: 25rem;
+          }
+          @media screen and (min-width:1200px) and (max-width:1399.9px) {
+             width: 18rem;
+          }
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .right-content{
+          @include DeviceMinimum768 {
+            float:right;
+          }
+          @include DeviceMinimum1400{
+             width: calc(100% - 25rem);
+          }
+          @media screen and (min-width:1200px) and (max-width:1399.9px) {
+             width: calc(100% - 18rem);
+             padding: 15px 20px;
+          }
+          align-content: center;
+          height: 100%;
+          padding: 15px 25px;
+          a{
+            background: $gradientOne;
+              color: $colorWhite;
+              padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    @include DeviceMinimum1200{
+      font-size: 18px !important;
+    }
+            span{
+              display: inline;
+               @include DeviceMinimum1200{
+      font-size: 18px !important;
+    }
+            }
+          }
+
+        }
+      }
     }
   }
 }
