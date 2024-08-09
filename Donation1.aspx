@@ -74,6 +74,13 @@
                                             <asp:ListItem>--Select--</asp:ListItem>
                                             <asp:ListItem Value="1">Literacy Toolkit for a Child @ 237/-Qty
                                             </asp:ListItem>
+                                            <asp:ListItem Value="2">One Child 200 </asp:ListItem>
+                                            <asp:ListItem Value="3">Adult Literacy (1,000)</asp:ListItem>
+                                            <asp:ListItem Value="4">Whole Class (6,000)</asp:ListItem>
+                                            <asp:ListItem Value="5">A Year’s Education(8,500)</asp:ListItem>
+                                            <asp:ListItem Value="6">Teacher Training(13,000)</asp:ListItem>
+                                            <asp:ListItem Value="7">New Frontiers(42,000)</asp:ListItem>
+
                                         </asp:DropDownList>
                                         <p>
                                             <asp:Label ID="Label1" runat="server"
@@ -83,8 +90,8 @@
                                     </div>
 
                                     <div class="col-md-4">
-                                        <label>Quantity</label>
 
+                                        <asp:Label ID="lblQty" runat="server" Text="Quantity"></asp:Label>
                                         <asp:TextBox ID="txtQty" runat="server" class="form-control"
                                             placeholder="Quantity"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
@@ -214,27 +221,37 @@
                                     <div class="generosity-grid-item">
                                         <div class="card">
                                             <div class="left-img">
-                                                <img src="img/rs-200.jpg" alt="" class="img-fluid">
+                                                <img src="img/rs-6000.jpg" alt="" class="img-fluid">
                                             </div>
                                             <div class="right-content">
-                                                <a href="#">One Child <span><i
+
+                                                <asp:LinkButton ID="LinkButton1" runat="server"
+                                                    onclick="LinkButton1_Click">One Child <span><i
                                                             class="fa-solid fa-indian-rupee-sign"></i> 200
-                                                </a>
-                                                <p>Donate a Literacy & Numeracy toolkit to help a child learn
-                                                    foundational skills which will help them thrive.
-                                                </p>
+                                                </asp:LinkButton>
+
+                                                <%-- <a href="#">One Child <span><i
+                                                            class="fa-solid fa-indian-rupee-sign"></i> 200
+                                                        </a>--%>
+                                                        <p>Donate a Literacy & Numeracy toolkit to help a child learn
+                                                            foundational skills which will help them thrive.
+                                                        </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="generosity-grid-item">
                                         <div class="card">
                                             <div class="left-img">
-                                                <img src="img/rs-1000.jpg" alt="" class="img-fluid">
+                                                <img src="img/rs-200.jpg" alt="" class="img-fluid">
                                             </div>
                                             <div class="right-content">
-                                                <a href="#">Adult Literacy <span><i
+
+
+                                                <asp:LinkButton ID="LinkButton2" runat="server"
+                                                    onclick="LinkButton2_Click">Adult Literacy <span><i
                                                             class="fa-solid fa-indian-rupee-sign"></i> 1,000
-                                                </a>
+                                                </asp:LinkButton>
+
                                                 <p>Give the gift of a lifetime by helping one adult learn to read and
                                                     write through our accelerated classes.
                                                 </p>
@@ -244,12 +261,15 @@
                                     <div class="generosity-grid-item">
                                         <div class="card">
                                             <div class="left-img">
-                                                <img src="img/rs-6000.jpg" alt="" class="img-fluid">
+                                                <img src="img/rs-42000.jpg" alt="" class="img-fluid">
                                             </div>
                                             <div class="right-content">
-                                                <a href="#">Whole Class <span><i
+
+                                                <asp:LinkButton ID="LinkButton3" runat="server"
+                                                    onclick="LinkButton3_Click">Whole Class <span><i
                                                             class="fa-solid fa-indian-rupee-sign"></i> 6,000
-                                                </a>
+                                                </asp:LinkButton>
+
                                                 <p>Provide powerful, hands-on learning materials for a whole classroom
                                                     in a government primary school.
                                                 </p>
@@ -262,9 +282,12 @@
                                                 <img src="img/rs-8500.jpg" alt="" class="img-fluid">
                                             </div>
                                             <div class="right-content">
-                                                <a href="#">A Year’s Education <span><i
+
+
+                                                <asp:LinkButton ID="LinkButton4" runat="server"
+                                                    onclick="LinkButton4_Click">A Year’s Education <span><i
                                                             class="fa-solid fa-indian-rupee-sign"></i> 8,500
-                                                </a>
+                                                </asp:LinkButton>
                                                 <p>Sponsor a child’s accelerated education for a year, giving them the
                                                     opportunity to catch up to grade level.
                                                 </p>
@@ -277,9 +300,13 @@
                                                 <img src="img/rs-13000.jpg" alt="" class=" img-fluid">
                                             </div>
                                             <div class="right-content">
-                                                <a href="#">Teacher Training <span><i
+
+                                                <asp:LinkButton ID="LinkButton5" runat="server"
+                                                    onclick="LinkButton5_Click">Teacher Training <span><i
                                                             class="fa-solid fa-indian-rupee-sign"></i> 13,000
-                                                </a>
+                                                </asp:LinkButton>
+
+
                                                 <p>Fund a one-day teacher training workshop to empower a whole community
                                                     of educators.
                                                 </p>
@@ -289,12 +316,19 @@
                                     <div class="generosity-grid-item">
                                         <div class="card">
                                             <div class="left-img">
-                                                <img src="img/rs-42000.jpg" alt="" class="img-fluid">
+                                                <img src="img/rs-1000.jpg" alt="" class="img-fluid">
                                             </div>
                                             <div class="right-content">
-                                                <a href="#">New Frontiers <span><i
+
+
+                                                <asp:LinkButton ID="LinkButton6" runat="server"
+                                                    onclick="LinkButton6_Click">New Frontiers <span><i
                                                             class="fa-solid fa-indian-rupee-sign"></i> 42,000
-                                                </a>
+                                                </asp:LinkButton>
+
+
+
+
                                                 <p>Help us replicate the Accelerating Learning for All materials in
                                                     another language, giving thousands more children access
                                                     to a free, high-quality resource.

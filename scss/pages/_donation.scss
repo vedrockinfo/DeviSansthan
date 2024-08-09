@@ -2,11 +2,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  
+
   position: relative;
+
   @include DeviceMaximum992 {
     min-height: auto;
   }
+
   &::before {
     content: "";
     background-color: #18181b;
@@ -17,9 +19,11 @@
     height: 100%;
     opacity: 0.7;
   }
+
   .container {
     position: relative;
   }
+
   h1 {
     color: $colorPrimary;
     font-size: 24px;
@@ -27,12 +31,14 @@
     margin: 0;
     text-align: center;
     font-weight: bold;
+
     @include DeviceMaximum576 {
       font-size: 20px;
       line-height: 44px;
       text-align: center;
     }
   }
+
   h6 {
     color: $colorPrimary;
     font-size: 18px;
@@ -40,33 +46,41 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 4rem;
+
     @include DeviceMaximum576 {
       margin-bottom: 2rem;
     }
   }
+
   .donation-form {
     background: #fff;
     border-radius: 10px;
     padding: 25px;
     margin-top: 6rem;
     margin-bottom: 6rem;
+
     @include DeviceMaximum992 {
       margin-top: 5rem;
       margin-bottom: 5rem;
     }
+
     @media screen and (max-height: 850px) {
       margin-top: 7rem;
     }
+
     li.nav-item {
       flex: 0 0 33.33%;
+
       a {
         padding: 15px;
+
         @include DeviceMaximum768 {
           padding: 10px 0;
         }
       }
     }
   }
+
   input.form-control {
     min-height: 40px;
     padding: 5px 10px;
@@ -76,10 +90,12 @@
     color: $colorTertiary;
     border: 1px solid $colorPrimary;
   }
+
   .donation-amount {
     display: flex;
     justify-content: space-evenly;
     margin: 5rem 0 2rem 0;
+
     @include DeviceMaximum576 {
       margin: 2rem 0;
     }
@@ -87,6 +103,7 @@
 
   .donation-value {
     display: inline-block;
+
     label {
       background: $colorWhite;
       cursor: pointer;
@@ -98,6 +115,7 @@
   label {
     font-size: 20px;
     font-weight: 500;
+
     @include DeviceMaximum576 {
       font-size: 16px;
       padding: 0 20px;
@@ -107,6 +125,7 @@
   .currency {
     width: 120px;
     text-align: center;
+
     @include DeviceMaximum576 {
       width: auto;
     }
@@ -114,70 +133,87 @@
 
   input[type="radio"] {
     display: none;
-    &:checked + label {
+
+    &:checked+label {
       background-image: $gradientOne;
       color: $colorWhite;
     }
   }
+
   .nav-tabs .nav-link {
     &:hover {
       background-color: rgba($colorSecondary, $alpha: 0.12);
       border: none;
     }
   }
+
   .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-link{
+  .nav-tabs .nav-link {
     background: rgba(#f2f2f2, $alpha: 0.5);
+
     &.active {
-    color: $colorWhite;
-    background-image: $gradientOne;
-    border: none;
-  }
+      color: $colorWhite;
+      background-image: $gradientOne;
+      border: none;
+    }
   }
 }
-.donation-cards{
-   padding: 7rem 0;
+
+.donation-cards {
+  padding: 7rem 0;
+
   @include DeviceMaximum768 {
     padding: 4rem 0;
   }
+
   .card {
     transition: all 0.5s;
-    &:hover{
+
+    &:hover {
       background: #f7f7f7;
       transform: translateY(-5px);
     }
+
     .c-wrapper {
-    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 99%, 0 75%);
-}
-    @include DeviceMaximum992{
+      clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 99%, 0 75%);
+    }
+
+    @include DeviceMaximum992 {
       margin-bottom: 3rem;
     }
-    .card-body{
+
+    .card-body {
       position: relative;
-      @include DeviceMinimum768{
-        .link-one{
-        position: absolute;
-        bottom: 3rem;
-        width: max-content;
-        left: 50%;
-        transform: translateX(-50%);
+
+      @include DeviceMinimum768 {
+        .link-one {
+          position: absolute;
+          bottom: 3rem;
+          width: max-content;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
-      }
+
       @media screen and (min-width:768px) {
         height: 30rem;
       }
+
       @media screen and (min-width:992px) {
         height: 40rem;
       }
-    @media screen and (min-width:1200px) {
-      height: 34rem;
-    }
-    @media screen and (min-width:1400px) {
-      height: 31rem;
+
+      @media screen and (min-width:1200px) {
+        height: 34rem;
+      }
+
+      @media screen and (min-width:1400px) {
+        height: 31rem;
+      }
     }
   }
-  }
-  .card-title{
+
+  .card-title {
     color: $colorPrimary;
     margin-bottom: 2rem;
   }
@@ -185,6 +221,7 @@
 
 .what-we-do {
   padding: 0 0 7rem 0;
+
   @include DeviceMaximum768 {
     padding: 0 0 4rem 0;
   }
@@ -193,52 +230,65 @@
     .row {
       flex-direction: column-reverse;
     }
+
     .content {
       margin-bottom: 30px;
     }
   }
-  .devi-img{ 
+
+  .devi-img {
     @include DeviceMinimum992 {
       padding-right: 5px;
     }
+
     img {
-    border-radius: 1rem;
+      border-radius: 1rem;
+    }
   }
-}
-  .dontaion-partner-grid{
+
+  .dontaion-partner-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 3rem;
     gap: 3rem;
-    @include  DeviceMaximum992{
+
+    @include DeviceMaximum992 {
       grid-template-columns: repeat(3, 1fr);
     }
-    @include  DeviceMaximum768{
+
+    @include DeviceMaximum768 {
       grid-template-columns: repeat(2, 1fr);
     }
-     @include  DeviceMaximum576{
+
+    @include DeviceMaximum576 {
       grid-template-columns: repeat(1, 1fr);
     }
-    &__item{
+
+    &__item {
       text-align: center;
     }
-    img{
+
+    img {
       width: 13rem;
       margin: auto;
     }
   }
 }
+
 .donation-raised {
   padding: 7rem 0;
+
   @include DeviceMaximum768 {
     padding: 4rem 0;
   }
+
   background-image: url("../img/bg-03.jpg");
   // background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: unset;
   position: relative;
+
   &::before {
     content: "";
     background: #18181b;
@@ -249,9 +299,11 @@
     width: 100%;
     height: 100%;
   }
+
   .container {
     position: relative;
   }
+
   h2.fund-raised {
     color: $colorWhite;
     font-size: 90px;
@@ -260,10 +312,12 @@
     @include DeviceMaximum992 {
       font-size: 50px;
     }
+
     @include DeviceMaximum576 {
       font-size: 30px;
     }
   }
+
   h6 {
     color: $colorWhite;
     font-size: 30px;
@@ -271,38 +325,48 @@
     margin-bottom: 15px;
     display: inline-block;
     padding: 10px 0;
+
     @include DeviceMaximum576 {
       font-size: 20px;
     }
   }
+
   p {
     color: $colorWhite;
     padding-bottom: 20px;
   }
 }
+
 .how-do-we-work {
   padding: 7rem 0;
+
   @include DeviceMaximum768 {
     padding: 4rem 0;
   }
+
   li {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
+
   .devi-img {
     position: relative;
+
     @include DeviceMaximum992 {
       margin-top: 30px;
     }
+
     img {
       transition: all 0.5s;
       border-radius: 10px;
     }
+
     &:hover::after {
       left: 20px;
       top: 20px;
     }
+
     &:hover img {
       transform: translate(-10px, -10px);
       box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -312,6 +376,7 @@
         transform: none !important;
       }
     }
+
     &::after {
       background: $colorYellow;
       content: "";
@@ -323,201 +388,238 @@
       position: absolute;
       border-radius: 10px;
       transition: all 0.5s;
+
       @include DeviceMaximum768 {
         content: none !important;
       }
     }
   }
 }
+
 .faq {
   padding-bottom: 7rem;
+
   @include DeviceMaximum768 {
     padding-bottom: 4rem;
   }
+
   button {
     font-size: 20px;
     font-weight: 600;
     padding: 20px 20px;
+
     @include DeviceMaximum768 {
       font-size: 14px;
     }
+
     &:hover {
       background-color: rgba($colorSecondary, $alpha: 0.12);
     }
   }
-  .accordion-button
-  {
+
+  .accordion-button {
     &:not(.collapsed) {
-    color: $colorWhite;
-    background-image: $gradientOne;
-  }
+      color: $colorWhite;
+      background-image: $gradientOne;
+    }
+
     font-size: 1.4rem;
+
     &::after {
       filter: sepia(2) brightness(2);
     }
   }
 }
-.child-donation{
-  .child-donation-grid{
+
+.child-donation {
+  .child-donation-grid {
     display: grid;
-    @include DeviceMinimum992{
+
+    @include DeviceMinimum992 {
       grid-template-columns: 60% 40%;
     }
+
     align-items: center;
-    .child-donation-item{
-      @include DeviceMinimum992{
-        &:nth-child(2){
+
+    .child-donation-item {
+      @include DeviceMinimum992 {
+        &:nth-child(2) {
           padding-left: 50px;
           padding-right: 5rem;
         }
       }
-      @include DeviceMaximum992{
+
+      @include DeviceMaximum992 {
         margin-top: 5rem;
         text-align: center;
       }
-      .dontaing-img{
+
+      .dontaing-img {
         position: relative;
-        &::before{
+
+        &::before {
           content: '';
-    position: absolute;
-    background: url(../img/about-banner-bg.png) no-repeat center center;
-    background-size: 100% 100%;
-    top: 0;
-    left: -3px;
-    width: 103%;
-    height: 103%;
-    z-index: 2;
+          position: absolute;
+          background: url(../img/about-banner-bg.png) no-repeat center center;
+          background-size: 100% 100%;
+          top: 0;
+          left: -3px;
+          width: 103%;
+          height: 103%;
+          z-index: 2;
         }
-        img{
+
+        img {
           width: 100%;
-          @include DeviceMinimum992{
+
+          @include DeviceMinimum992 {
             height: 500px;
           }
+
           object-fit: cover;
           object-position: 100% 200%;
         }
       }
-      h1{
+
+      h1 {
         font-size: 27px;
-    color: $colorPrimary;
-    line-height: 34px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0;
+        color: $colorPrimary;
+        line-height: 34px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
       }
-      h2{
+
+      h2 {
         font-weight: 700;
-    font-size: 35px;
-    line-height: 50px;
-    color: $colorPrimary;
+        font-size: 35px;
+        line-height: 50px;
+        color: $colorPrimary;
       }
     }
   }
 }
 
-.donationone-form{
+.donationone-form {
   background: #f5f6f9;
   margin-top: 7rem;
   padding: 7rem 0;
-  @include DeviceMaximum768{
+
+  @include DeviceMaximum768 {
     margin-top: 4rem;
     padding: 4rem 0;
   }
-  .alfa-input{
-    @include DeviceMinimum768{
+
+  .alfa-input {
+    @include DeviceMinimum768 {
       display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    gap: 10px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 10px;
     }
-    @include DeviceMinimum992{
+
+    @include DeviceMinimum992 {
       justify-content: space-between;
     }
-    @include DeviceMaximum768{
+
+    @include DeviceMaximum768 {
       display: block;
-      .f-input{
-        &:not(:last-child){
+
+      .f-input {
+        &:not(:last-child) {
           margin-bottom: 1rem;
         }
       }
     }
-    .f-input{
-      @include DeviceMinimum992{
+
+    .f-input {
+      @include DeviceMinimum992 {
         width: calc(100% / 7 - 10px);
       }
+
       position: relative;
-      label{
+
+      label {
         font-size: 15px;
-    color: #2a2b6b;
-    font-weight: 600;
-    margin-bottom: 5px;
+        color: #2a2b6b;
+        font-weight: 600;
+        margin-bottom: 5px;
       }
-      button{
-        @include DeviceMinimum992{
+
+      button {
+        @include DeviceMinimum992 {
           width: 100%;
         }
-        @include DeviceMinimum768{
+
+        @include DeviceMinimum768 {
           margin: 0;
         }
       }
     }
   }
-  .form-control{
+
+  .form-control {
     border: 1px solid #dcdee0;
     background: #fff;
     border-radius: 5px;
-    color: rgba(42,42,42,.6);
+    color: rgba(42, 42, 42, .6);
     padding: 10px 15px;
     box-sizing: border-box;
     width: 100%;
     font-size: 15px;
-    &:focus{
+
+    &:focus {
       box-shadow: none;
       border-color: #dcdee0;
     }
   }
 }
-.donationone-form .form-control ~ span {
-    position: absolute;
-    top: 0px;
-    @include DeviceMinimum768{
-      left: -10px;
-    }
-    @include DeviceMaximum768{
-      right: 20px;
-    }
+
+.donationone-form .form-control~span {
+  position: absolute;
+  top: 0px;
+
+  @include DeviceMinimum768 {
+    left: -10px;
+  }
+
+  @include DeviceMaximum768 {
+    right: 20px;
+  }
 }
 
 .generosity-section table {
-    font-size: 16px;
-    @media screen and (max-width: 768px) {
-      font-size: 13px;
-    }
-    
+  font-size: 16px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
+
 }
 
 .generosity-section table thead {
-    background: $gradientOne;
+  background: $gradientOne;
 }
 
 .generosity-section table thead th.text-center {
-    color: #fff;
+  color: #fff;
 }
 
 .generosity-section table tbody tr td:first-child {
-    border-right: 1px solid #e0e0e0;
-    background: #e4ffe6;
+  border-right: 1px solid #e0e0e0;
+  background: #e4ffe6;
 }
 
-.generosity.donate{
+.generosity.donate {
   background-image: url(../img/secondary-bg.jpg);
-    position: relative;
-    min-height: 39rem;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  position: relative;
+  min-height: 39rem;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   padding: 7rem 0;
-  &::before{
+
+  &::before {
     content: "";
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -526,84 +628,107 @@
     width: 100%;
     height: 100%;
   }
-  .container{
+
+  .container {
     position: relative;
   }
-  .secondary-heading{
+
+  .secondary-heading {
     color: $colorWhite;
   }
-  @include DeviceMaximum768{
+
+  @include DeviceMaximum768 {
     margin-top: 4rem;
     padding: 4rem 0;
   }
-  .generosity-grid{
+
+  .generosity-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    @include DeviceMaximum768{
+
+    @include DeviceMaximum768 {
       grid-template-columns: repeat(1, 1fr);
     }
-    .generosity-grid-item{
+
+    .generosity-grid-item {
       background: $colorWhite;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      .card{
-        @include DeviceMaximum1200{
+
+      .card {
+        @include DeviceMaximum1200 {
           text-align: center;
         }
-        @include DeviceMinimum1400{
+
+        @include DeviceMinimum1400 {
           height: 22rem;
         }
+
         @media screen and (min-width:1200px) and (max-width:1399.9px) {
-             height: 25rem;
-          }
+          height: 25rem;
+        }
+
         display: block;
-        .left-img{
+
+        .left-img {
           height: 100%;
+
           @include DeviceMinimum768 {
-            float:left;
+            float: left;
           }
-          @include DeviceMinimum1400{
+
+          @include DeviceMinimum1400 {
             width: 25rem;
           }
+
           @media screen and (min-width:1200px) and (max-width:1399.9px) {
-             width: 18rem;
+            width: 18rem;
           }
-          img{
+
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
           }
         }
-        .right-content{
+
+        .right-content {
           @include DeviceMinimum768 {
-            float:right;
+            float: right;
           }
-          @include DeviceMinimum1400{
-             width: calc(100% - 25rem);
+
+          @include DeviceMinimum1400 {
+            width: calc(100% - 25rem);
           }
+
           @media screen and (min-width:1200px) and (max-width:1399.9px) {
-             width: calc(100% - 18rem);
-             padding: 15px 20px;
+            width: calc(100% - 18rem);
+            padding: 15px 20px;
           }
+
           align-content: center;
           height: 100%;
           padding: 15px 25px;
-          a{
+
+          a {
             background: $gradientOne;
-              color: $colorWhite;
-              padding: 5px 15px;
-    display: inline-block;
-    margin-bottom: 15px;
-    font-weight: 600;
-    @include DeviceMinimum1200{
-      font-size: 18px !important;
-    }
-            span{
+            color: $colorWhite;
+            padding: 5px 15px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-weight: 600;
+
+            @include DeviceMinimum1200 {
+              font-size: 18px !important;
+            }
+
+            span {
               display: inline;
-               @include DeviceMinimum1200{
-      font-size: 18px !important;
-    }
+
+              @include DeviceMinimum1200 {
+                font-size: 18px !important;
+              }
             }
           }
 
@@ -611,4 +736,217 @@
       }
     }
   }
+}
+.hero-section-donate{
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 323px;
+    position: relative;
+    &::before{
+      content: "";
+    background-color: #18181b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    }
+    .container{
+      position: relative;
+    }
+    .donation-wrapper{
+      background-color: rgba(0, 0, 0, .5);
+        border-radius: 6px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .19);
+        color: $colorWhite;
+        padding: 3.2rem;
+        margin: 3.5rem 0;
+        h6{
+          font-size: 22.624px;
+          font-weight: 700;
+          line-height: 28.28px;
+          text-transform: none;
+          color: $colorWhite;
+        }
+        form{
+          margin: 2rem 0;
+          label{
+            font-size: 1.6rem;
+            margin-left: 0.5rem;
+          }
+          input{
+            accent-color: #e68619;
+            transform: scale(1.5);
+          }
+          p{
+            margin-top: 3rem;
+          }
+          button{
+            background: #e68619;
+            border-color: #e68619;
+            margin-top: 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: normal;
+            height: auto;
+            a{
+              color: $colorWhite;
+              line-height: normal;
+              height: 40px;
+              display: inline-grid;
+              place-content: center;
+            }
+            &:hover{
+              color: $colorWhite;
+              border-color: $colorWhite;
+              background: transparent;
+            }
+          }
+        }
+    }
+}
+
+.donation-details{
+  .dlogo-wrapper{
+    width: 20rem;
+    padding-bottom: 4rem;
+    position: relative;
+    margin-bottom: 2.4rem;
+    &::before{
+      content: "";
+      background: $colorPrimary;
+      height: 5px;
+      width: 5rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    img{
+      width:100%;
+    }
+  }
+  .dontaing-img{
+    margin: 3rem 0;
+  }
+
+  .form-area {
+    border-radius: 2px;
+    box-shadow: 6px 11px 24px 0 rgba(23, 31, 37, 0.12);
+    background: #fff;
+    padding: 30px 0 0;
+    @media screen and (max-width:992px) {
+      margin: 3rem 0 5rem;
+    }
+    .heading-six{
+      padding-bottom: 2rem;
+      position: relative;
+      margin: 0 2rem 2rem;
+      &::before{
+        content: "";
+        background: $colorPrimary;
+        height: 5px;
+        width: 5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  .donate-us {
+    .donate-col{
+      display: flex;
+      align-items: flex-end;
+      gap: 4rem;
+      flex-wrap: wrap;
+      padding: 0 32px;
+        margin-bottom: 1.5rem;
+        @media screen and (max-width:575px) {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1px;
+        }
+        label{
+          font-size: 1.4rem;
+          font-weight: 500;
+          @media screen and (min-width:575.8px) {
+            width: 25%;
+          & ~ *{
+            width: calc(100% - 25% - 4rem);
+          }
+          }
+        }
+    }
+
+    .payable-amount{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 32px;
+      @media screen and (max-width:575px) {
+        flex-direction: column;
+      }
+      .left{
+        background: #f5f6f7;
+        min-height: 56px;
+        padding: 0 2rem;
+        @media screen and (max-width:575.1px) {
+          justify-content: center;
+        }
+        @media screen and (min-width:575.9px) {
+          width: calc(100% - 180px);
+        }
+        display: flex;
+        align-items: center;
+        img{
+          width: 25rem;
+        }
+      }
+      .right{
+        min-height: 56px;
+        padding: 0 2rem;
+        justify-content: center;
+        @media screen and (min-width:575px) {
+          width: 180px;
+        }
+        color: $colorWhite;
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 100%);
+        background-color: #528ff0;
+        .total-amount{
+          font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+        }
+      }
+    }
+  .form-control {
+      padding: 10px 10px !important;
+      font-size: 16px;
+      border-radius: 0;
+    border-color: transparent !important;
+    border-bottom: 1px solid rgba($colorBlack, $alpha: 0.2) !important;
+    font-size: 1.4rem!important;
+    &:focus{
+      border-bottom: 1px solid rgba($colorBlack, $alpha: 1) !important;
+    }
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+      &:checked {
+          accent-color: $colorPrimary;
+      }
+  }
+
+  textarea {
+      resize: none;
+  }
+
+    .submit-row {
+        margin-top: 2rem;
+    }
+}
 }

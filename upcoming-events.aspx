@@ -40,7 +40,7 @@
                         <div class="upcoming-grid__items">
                             <div class="eventsection">
                                 <div class="eventsectionimg">
-                                    <img decoding="async" src="img/ed-leadership-001.jpg" alt="">
+                                    <img decoding="async" src="img/g-learning-lab-01.jpg" alt="">
                                     <div class="eventonline">
                                         <span>HYBRID: ONLINE & IN LUCKNOW</span>
                                     </div>
@@ -54,7 +54,8 @@
                                         <p>Keen to learn about the latest innovations in education? Enjoy in-depth panel
                                             discussions, plenary sessions and breakout
                                             rooms at South Asia’s longest-running and largest education conference. <a
-                                                href="https://getilearn.org/edleader/index.html">learn
+                                                href="https://dignityeducation.org/edleadership"
+                                                target="_blank">learn
                                                 more</a></p>
                                     </div>
                                 </div>
@@ -63,14 +64,14 @@
                         <div class="upcoming-grid__items">
                             <div class="eventsection">
                                 <div class="eventsectionimg">
-                                    <img decoding="async" src="img/synergy_banner.jpg" alt="">
+                                    <img decoding="async" src="img/synergy_summit-3.0.jpg" alt="">
                                     <div class="eventonline">
-                                        <span>11-12 July 2024</span>
+                                        <span>IN LUCKNOW</span>
                                     </div>
                                 </div>
                                 <div class="eventsection-contents">
                                     <div class="eventsectionheading">
-                                        <h6>IN LUCKNOW</h6>
+                                        <h6>23-25 September 2024</h6>
                                         <h4>Synergy Summit</h4>
                                     </div>
                                     <div class="eventsectioncontent">
@@ -78,8 +79,8 @@
                                             at
                                             the Synergy Summit to explore the latest
                                             in literacy and numeracy pedagogy, and forge partnerships with like-minded
-                                            organisations.<a
-                                                href="https://www.dignityeducation.org/synergysummit/index.aspx">learn
+                                            organisations.<a href="https://dignityeducation.org/synergy/"
+                                                target="_blank">learn
                                                 more</a></p>
                                     </div>
                                 </div>
@@ -95,7 +96,7 @@
                                 </div>
                                 <div class="eventsection-contents">
                                     <div class="eventsectionheading">
-                                        <h6>COMING SOON</h6>
+                                        <h6>Upcoming</h6>
                                         <h4>World Leaders Conclave</h4>
                                     </div>
                                     <div class="eventsectioncontent">
@@ -103,7 +104,8 @@
                                             at
                                             the World Leaders Conclave to hear from
                                             leading educational thinkers and practitioners from around the world. <a
-                                                href="https://www.dignityeducation.org/leadersconclave/">learn
+                                                href="https://dignityeducation.org/leadersconclave/"
+                                                target="_blank">learn
                                                 more</a></p>
                                     </div>
                                 </div>

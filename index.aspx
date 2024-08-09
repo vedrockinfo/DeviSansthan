@@ -264,11 +264,8 @@
             </div>
             <div class="col-md-6">
               <div class="card mb-5">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/-JS_qhtZgZM?si=R-yQk10c3rsywogS"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
                 <div class="card-body">
+                  <img src="img/g-learning-lab-01.jpg" class="card-img-top" alt="...">
                   <h5 class="card-title text-center">Ed Leadership</h5>
                   <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-12 last">
@@ -281,7 +278,8 @@
                   <p class="card-text text-center">Keen to learn about the latest educational innovations? Meet radical
                     thinkers & practitioners at Ed Leadership</p>
                   <div class="link-one">
-                    <a href="https://getilearn.org/edleader/index.html" class="btn mx-auto" target="_blank">explore
+                    <a href="https://dignityeducation.org/edleadership/" class="btn mx-auto"
+                      target="_blank">explore
                       now</a>
                   </div>
                 </div>
@@ -289,15 +287,12 @@
             </div>
             <div class="col-md-6">
               <div class="card">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/_DSDPLlwc7w?si=IbN_OIH7FJm4tMOA"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
                 <div class="card-body">
+                  <img src="img/synergy_summit-3.0.jpg" class="card-img-top" alt="...">
                   <h5 class="card-title text-center">Synergy Summit 3.0</h5>
                   <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-12 last">
-                      <span class="online">11-12 JULY 2024</span>
+                      <span class="online">23-25 September 2024</span>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                       <span class="online">In Lucknow</span>
@@ -307,8 +302,7 @@
                     there at the
                     Synergy Summit 3.0</p>
                   <div class="link-one">
-                    <a href="https://www.dignityeducation.org/synergysummit/index.aspx" class="btn mx-auto"
-                      target="_blank">explore
+                    <a href="https://dignityeducation.org/synergysummit3.0/" class="btn mx-auto" target="_blank">explore
                       now</a>
                   </div>
                 </div>
@@ -321,7 +315,7 @@
                   <h5 class="card-title text-center">World Leaders Conclave</h5>
                   <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-12 last">
-                      <span class="online">coming soon</span>
+                      <span class="online">Upcoming</span>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                       <span class="online">online</span>
@@ -330,8 +324,8 @@
                   <p class="card-text text-center">Ready to help shape the discourse on international education policy?
                     Join us at the 2nd World Leaders Conclave</p>
                   <div class="link-one">
-                    <a href="https://www.dignityeducation.org/leadersconclave/" class="btn mx-auto"
-                      target="_blank">explore now</a>
+                    <a href="https://dignityeducation.org/leadersconclave/" class="btn mx-auto" target="_blank">explore
+                      now</a>
                   </div>
                 </div>
               </div>
@@ -543,8 +537,7 @@
                 </div>
 
                 <div class="projects-card__heading">
-                  <a href="our-projects.aspx#our-community-area">International
-                    Projects</a>
+                  <a href="our-projects.aspx#our-community-area">Community Developement</a>
                 </div>
               </div>
             </div>
